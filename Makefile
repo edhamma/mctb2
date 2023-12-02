@@ -9,7 +9,7 @@ assemble:
 	#cp -r sphinx-vimm build/
 	#jupyter execute 05-vimm-odt2tei.ipynb
 	# jupyter execute web2tei.ipynb
-	cp mctb2.tei build/mctb2.tei (for online access)
+	cp mctb2.tei build/mctb2.tei # for online access
 	jupyter execute 10-assemble-TEI.mctb2-only.ipynb
 
 mctb2:
