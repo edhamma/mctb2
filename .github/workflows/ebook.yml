@@ -1,0 +1,26 @@
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+      - name: Install deps 🛒
+        run: |
+          sudo apt-get update && sudo apt-get install xsltproc docbook-xml docbook-xsl docbook5-xml docbook-xsl-ns default-jre-headless texlive-latex-recommended texlive-latex-extra texlive-luatex latexmk fonts-texgyre fonts-lmodern gsfonts
+          pip install sphinx jupyterlab nbconvert lxml GitPython roman plastex rich
+      - name: Assemble sources 🔧
+        run: make assemble
+      - name: MCTB2 🔧
+        run: make mctb2
+      - name: Web 🔧
+        run: cp index.html build/index.html
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
