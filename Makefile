@@ -17,8 +17,8 @@ assemble:
 	python3 tei-export.py
 
 mctb2:
-	#cd build/latex && latexmk mctb2.tex
-	#cd build/latex && plastex -c plastex-mctb2.ini mctb2.tex
+	cd build/latex && latexmk mctb2.tex
+	cd build/latex && plastex -c plastex-mctb2.ini mctb2.tex
 	make -C build/sphinx-mctb2 html singlehtml epub
 	#weasyprint -s html5/style.A4.css build/html5/vimm.html build/html5/vimm.weasyprint.pdf
 	#vivliostyle build --style build/html5/style.A4.css --single-doc --timeout 1200 --output build/html5/vimm.vivliostyle.pdf build/html5/vimm.html
