@@ -200,7 +200,7 @@
 \def\mainmatter{
 	\cleardoublepage
 	\setcounter{chapter}{0}
-	\renewcommand{\thechapter}{\Roman{chapter}}
+	\renewcommand{\thechapter}{\arabic{chapter}}
 	\renewcommand{\thesection}{\arabic{section}}
 	\renewcommand{\chaptername}{Chapter} 
 	\ifplastex\else
@@ -238,7 +238,7 @@
 \fi
 
 % number chapter with roman numbers
-\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thechapter}{\arabic{chapter}}
 % show parts as "Part II" in the TOC, but avoid "Part Part II" in the title itself
 \renewcommand{\thepart}{Part \Roman{part}}
 \renewcommand{\partname}{} 
