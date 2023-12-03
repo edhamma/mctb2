@@ -1,3 +1,5 @@
+default: assemble mctb2
+
 assemble:
 	mkdir -p build
 	cp -r latex build/
@@ -13,7 +15,8 @@ assemble:
 	jupyter execute 10-assemble-TEI.mctb2-only.ipynb
 
 mctb2:
-	cd build/latex && latexmk mctb2.tex && plastex -c plastex-mctb2.ini mctb2.tex
+	cd build/latex && latexmk mctb2.tex
+	cd build/latex && plastex -c plastex-mctb2.ini mctb2.tex
 	#make -C build/sphinx-vimm html singlehtml epub
 	#weasyprint -s html5/style.A4.css build/html5/vimm.html build/html5/vimm.weasyprint.pdf
 	#vivliostyle build --style build/html5/style.A4.css --single-doc --timeout 1200 --output build/html5/vimm.vivliostyle.pdf build/html5/vimm.html

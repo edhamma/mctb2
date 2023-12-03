@@ -1,5 +1,11 @@
 \input{vism-common.tex}
 
+\ifplastex\else
+	\usepackage{newunicodechar}
+	\usepackage[weather]{ifsym}
+	\newunicodechar{⚡}{\Lightning}
+\fi
+
 \def\vismAssertFootnoteCounter#1{\relax}
 \begin{document}
 	\title{Mastering the Core Teachings of the Buddha}
