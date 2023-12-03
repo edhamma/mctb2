@@ -215,7 +215,7 @@ class LatexWriter(object):
         elif e.tag=='IGNORE': return ''
         # elif e.tag=='raw':return open('latex/'+e.attrib['file']+'.tex','r').read()
         elif e.tag=='ref':
-            return '\href{'+e.attrib['target']+'}{'+self._recurse(e)+'}'
+            return '\href{'+e.attrib['target'].replace('#','\\#')+'}{'+self._recurse(e)+'}'
         elif e.tag=='graphic':
             return '\\begin{centering}\\includegraphics[width=.8\\linewidth]{'+e.attrib['url']+'}\\end{centering}'
         raise RuntimeError(f'Unhandled tag <{e.tag}>, line {e.sourceline}')
