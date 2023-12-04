@@ -8,6 +8,8 @@ import tei_exporters
 mctbTEI=etree.parse('mctb2.tei',etree.XMLParser(remove_comments=True)).getroot() 
 
 if 1:
+    tei_exporters.latex_write_defs('build/latex/vism-defs.tex')
+
     latexWriter=tei_exporters.LatexWriter()
     for e in mctbTEI.iter():
         if e.tag=='emph': e.tag='em'

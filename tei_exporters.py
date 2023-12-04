@@ -7,6 +7,17 @@ import textwrap
 #vimm=False
 #mainmatter=False
 
+import git, urllib.parse
+vismCommit=(head:=git.Repo(search_parent_directories=True).head).object.hexsha[:7]
+vismCommitTimestampQuery=urllib.parse.quote('in version '+vismCommit+' dated '+head.commit.committed_datetime.date().isoformat())
+
+def latex_write_defs(out):
+    vismCommitTimestampQuery_=vismCommitTimestampQuery.replace("%","\\%")
+    open(out,'w').write(f'''
+        \\def\\vismCommit{{{vismCommit}}}\n
+        \\def\\vismCommitTimestampQuery{{{vismCommitTimestampQuery_}}}\n
+    ''')
+
 class LatexWriter(object):
     def __init__(self,vimm=False,editorial_titles=False):
         self.vimm=vimm
