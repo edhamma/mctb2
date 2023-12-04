@@ -25,7 +25,7 @@ class LatexWriter(object):
         self.bookMatter=-1
         self.lev=-1
     # def _latex_writer(e,lev=0,ord=-1):
-    def _rep(self,t): return t.replace('&','\\&').replace('#','\\#')
+    def _rep(self,t): return t.replace('&','\\&').replace('#','\\#').replace('$','\\$')
     def _recurse(self,e,*,incLev=True):
         if incLev: self.lev+=1
         if e.text is not None and len(e)==0: ret=self._rep(e.text)
