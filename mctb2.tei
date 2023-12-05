@@ -112,7 +112,7 @@
         </p>
       </div>
       <div type="2-chapter" name="Foreword and Warning">
-        <head>Foreword and Warning</head>
+        <head n="foreword-and-warning">Foreword and Warning</head>
         <p>
           <span>When I was about fourteen or fifteen years old, I accidentally ran into some of the classic early meditation experiences described in the ancient texts, and my reluctant spiritual quest began. I did not realize what had happened, nor did I realize I had crossed something like a point of no-return, something I would later call the “Arising and Passing Away” (A&amp;P). I had a very strange dream with bright lights, my entire body and world seemed to explode like fireworks, and afterwards I had to find something, but I had no idea what that was.</span>
         </p>
@@ -248,7 +248,7 @@
           <head>Introduction to Part I</head>
           <p>
             <span>If you have not yet read the </span>
-            <ref target="https://www.mctb.org/mctb2/table-of-contents/foreword-and-warning/">Foreword and Warning</ref>
+            <ptr type="internal" target="foreword-and-warning">Foreword and Warning</ptr>
             <span>, please do so now. The Buddhist path has often been called a “spiritual path”, and this use of religious language can be very inspiring for some people. The Buddhist path can also be thought of in terms of a scientific experiment, a set of exercises that the Buddha and his followers have claimed lead to very specific, reproducible, verifiable effects, which are deemed not just worthwhile but liberative. Using this sort of practical, more scientifically oriented language can also be very inspiring for some people. However, as science doesn’t often provide explicit emphases on the meaning and relevance of its findings to living humans with hearts and minds, language and concepts that can bridge that gap are often useful.</span>
           </p>
           <p>
