@@ -90,6 +90,7 @@ class LatexWriter(object):
             elif e.attrib['type']=='TODO':
                 if e.text is None: raise RuntimeError(f'TODO not with no text, line {e.sourceline}')
                 return r'\textbf{[TODO: '+e.text+']}'
+            assert False
         elif e.tag=='lg':
             #assert e[-1].tag=='l'
             #e[-1].attrib['last-line']="1"
@@ -110,7 +111,7 @@ class LatexWriter(object):
         elif e.tag=='div':
             level,tail=int((m:=re.match('(?P<tail>(?P<level>[0-9]+)-.*)',e.attrib['type'])).group('level')),m.group('tail')
             heading=e[0]
-            assert heading.tag=='head' #.startswith('heading')
+            assert heading.tag=='head'
             toc_num=heading.attrib.get('n',None)
             def _recurse_wrap(e2):
                 if e2.get('rend',None)=='hanging': return r'\begin{vismHanging}'+self._recurse(e2)+'\end{vismHanging}'
@@ -147,7 +148,7 @@ class LatexWriter(object):
             assert 'id' in e.attrib
             return '\\vismHypertarget{'+e.attrib['id']+'}\\label{'+e.attrib['id']+'}{}'
         elif e.tag=='ptr':
-            if e.attrib['type'] in ('vism','vimm'):
+            if e.attrib['type'] in ('vism','vimm','internal'):
                 txt=e.text.replace('[PAGE]',', page \\pageref{'+e.attrib['target']+'}')
                 return r'\hyperlink{'+e.attrib['target']+r'}{'+txt+'}{}'
             elif e.attrib['type']=='bib':
@@ -156,6 +157,7 @@ class LatexWriter(object):
                     if href:=e.get('href',None): ret+=' \href{'+self._rep(href)+'}{'+loc+'}'
                     else: ret+=loc
                 return ret+'}'
+            else: raise ValueError('Unknown value of type in <ptr type="{e.attrib["type"]}">, line {e.sourceline}')
             # r'\fbox{'+e.text+'→'+e.attrib['target']+'}'
             assert False
         elif e.tag in ('index','glossary'):
@@ -262,6 +264,13 @@ class SphinxWriter(object):
     def recurse(self,e):
         if e.text is not None and len(e)==0: return self._rep(e.text)
         return ''.join([self.write(e2,ord=ord) for ord,e2 in enumerate(e)])
+    #def indent_except_first(self,t):
+    #    i='    '
+    #    t2=textwrap.indent(t,i)
+    #    assert len(t2.split('\n')[0])>len(i)
+    #    return t2[len(i):]
+    def indent_all(self,t):
+        return textwrap.indent(t,4*' ')
     def title(self,e,level,anchor=None,prefix=None,prefixSep='. '):
         ret=''
         if anchor: ret+='\n\n.. _'+anchor+':'
@@ -337,9 +346,14 @@ class SphinxWriter(object):
                 elif self.matter==0: f=f'ch-{self.chapter:02d}'
                 elif self.matter==1: f=f'back-{"_ABCDEFGHI"[self.chapter]}'
                 f+=self.rstExt
-                anchor=((str(self.chapter) if self.chapters_arabic else roman.toRoman(self.chapter)) if self.matter==0 else None)
+                if anchor is None:
+                    anchor=((str(self.chapter) if self.chapters_arabic else roman.toRoman(self.chapter)) if self.matter==0 else None)
+                    prefix=anchor
+                else:
+                    # this is to handle cases when chapter has an ID (e.g. in mctb2 a chapter in frontmatter)
+                    prefix=None
                 self.chapter_anchor=anchor
-                self.writeRst(e=e,fname=f,title=self.recurse(heading),anchor=anchor,prefix=anchor,subTree=False)
+                self.writeRst(e=e,fname=f,title=self.recurse(heading),anchor=anchor,prefix=prefix,subTree=False)
                 return f
             elif 3<=level<=6:
                 return self.title(heading,prefix=e.attrib.get('n',None),prefixSep=' ',level=level)+'\n\n'+self.recurse(e)
@@ -400,7 +414,7 @@ class SphinxWriter(object):
         elif e.tag=='anchor':
             return f'\n\n.. _{e.get("id")}:\n\n'
         elif e.tag=='ptr':
-            if e.attrib['type'] in ('vism','vimm'):
+            if e.attrib['type'] in ('vism','vimm','internal'):
                 return f':ref:`{e.text.replace("[PAGE]","")} <{e.attrib["target"]}>`'
             elif e.attrib['type']=='bib':
                 ret=f' [{e.attrib["target"].replace(".","").replace(" ","")}]_ '
@@ -466,20 +480,20 @@ class SphinxWriter(object):
                 ret='\n'
                 for i,li in enumerate(e):
                     label=_mkLabel(i)
-                    ret+=f'\n\n{label} '+self.recurse(li)
+                    ret+=f'\n\n{label} '+self.indent_all(self.recurse(li))
                 ret+='\n\n'
                 return ret
             elif e.attrib['type']=='bulleted':
                 ret='\n'
                 for i,li in enumerate(e):
-                    ret+=f'\n\n* '+self.recurse(li)
+                    ret+=f'\n\n* '+self.indent_all(self.recurse(li))
                 ret+='\n\n'
                 return ret
             elif e.attrib['type']=='gloss':
                 ret='\n'
                 for i in range(0,len(e)//2):
                     label,item=e[2*i],e[2*i+1]
-                    ret+=f'\n{self.recurse(label)}\n    {self.recurse(item)}'
+                    ret+=f'\n{self.recurse(label)}\n    {self.indent_all(self.recurse(item))}'
                 ret+='\n\n'
                 return ret
             else: raise ValueError(f'Unhandled list type: {e.attrib["type"]}')
@@ -638,7 +652,7 @@ def _docb_writer(e,ord=0,parent=None,xslTNG=False):
         if e.attrib['ed'] in ('BPS2011','BPS1995'): return _E('literal',f'[{e.attrib["pdf_page"]}|{e.attrib["n"]}]')
         elif e.attrib['ed']=='PTS': return _E('varname',f'({e.attrib["n"]})')
     elif e.tag=='ptr':
-        if e.attrib['type'] in ('vism','vimm'): return _E('link',e.text.replace("[PAGE]",""),linkend=e.attrib['target'])
+        if e.attrib['type'] in ('vism','vimm','internal'): return _E('link',e.text.replace("[PAGE]",""),linkend=e.attrib['target'])
         elif e.attrib['type']=='bib':
             if 'loc' in e.attrib: return _E('phrase',subs=[_E('citation',e.attrib['target']),_E('phrase',' '+e.attrib['loc'])])
             return _E('citation',e.attrib['target'])
@@ -823,7 +837,7 @@ class Html5Writer():
             elif e.attrib['ed']=='PTS': return _E('span',f'({e.attrib["n"]})',class_='vism-page-pts')
         elif e.tag=='ptr':
             target=e.attrib['target']
-            if e.attrib['type'] in ('vism','vimm'): return _E('a',e.text.replace("[PAGE]",""),href='#'+target)
+            if e.attrib['type'] in ('vism','vimm','internal'): return _E('a',e.text.replace("[PAGE]",""),href='#'+target)
             elif e.attrib['type']=='bib':
                 ret=_E('span',class_='vism-bibref',subs=[_E('a',text=target,href='#bib:'+target)])
                 if loc:=e.get('loc',None):
