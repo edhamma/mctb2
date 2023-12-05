@@ -333,6 +333,8 @@ class SphinxWriter(object):
             heading=e[0]
             assert heading.tag.startswith('head')
             toc_num=heading.attrib.get('n',None)
+            if toc_num and anchor: raise RuntimeError('{e.sourceline}: both {e.attrib["id"]=} and {heading.attrib["n"]=} are defined.')
+            if toc_num: anchor=toc_num
             assert 0<level<9
             import roman
             if level==1: # part
@@ -350,7 +352,7 @@ class SphinxWriter(object):
                     anchor=((str(self.chapter) if self.chapters_arabic else roman.toRoman(self.chapter)) if self.matter==0 else None)
                     prefix=anchor
                 else:
-                    # this is to handle cases when chapter has an ID (e.g. in mctb2 a chapter in frontmatter)
+                    # this is to handle cases when chapter has an ID (e.g. in mctb2 a chapter in frontmatter), abut it should not be shown as prefix
                     prefix=None
                 self.chapter_anchor=anchor
                 self.writeRst(e=e,fname=f,title=self.recurse(heading),anchor=anchor,prefix=prefix,subTree=False)
