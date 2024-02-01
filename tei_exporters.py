@@ -230,7 +230,7 @@ class LatexWriter(object):
         elif e.tag=='ref':
             return '\href{'+e.attrib['target'].replace('#','\\#')+'}{'+self._recurse(e)+'}'
         elif e.tag=='graphic':
-            return '\\begin{centering}\\includegraphics[width=.8\\linewidth]{'+e.attrib['url']+'}\\end{centering}'
+            return '\\begin{center}\\includegraphics[width=\\vismWdPercent{80}]{'+e.attrib['url']+'}\\end{center}'
         raise RuntimeError(f'Unhandled tag <{e.tag}>, line {e.sourceline}')
 
 
