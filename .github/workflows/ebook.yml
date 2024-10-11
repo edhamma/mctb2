@@ -12,7 +12,7 @@ jobs:
       - name: Install deps 🛒
         run: |
           sudo apt-get update && sudo apt-get install xsltproc docbook-xml docbook-xsl docbook5-xml docbook-xsl-ns default-jre-headless texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-luatex latexmk fonts-texgyre fonts-lmodern gsfonts
-          rm /usr/lib/python3.??/EXTERNALLY-MANAGED # allow pip to mix with system pkgs
+          sudo rm /usr/lib/python3.??/EXTERNALLY-MANAGED # allow pip to mix with system pkgs
           pip install sphinx jupyterlab nbconvert lxml GitPython roman plastex rich
       - name: Assemble sources 🔧
         run: make assemble
