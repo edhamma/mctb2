@@ -1,0 +1,1406 @@
+<?xml version="1.0"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="mastering-the-core-teachings-of-the-buddha-2"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>Mastering the Core Teachings of the Buddha</text>
+  </docTitle>
+  <navMap>    
+    <navPoint id="navPoint1" playOrder="1">
+      <navLabel>
+        <text>Mastering the Core Teachings of the Buddha</text>
+      </navLabel>
+      <content src="index.xhtml" />  
+    </navPoint>
+    <navPoint id="navPoint2" playOrder="2">
+      <navLabel>
+        <text>Front</text>
+      </navLabel>
+      <content src="front.xhtml" />  
+      <navPoint id="navPoint3" playOrder="2">
+        <navLabel>
+          <text>Front</text>
+        </navLabel>
+        <content src="front.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint4" playOrder="3">
+        <navLabel>
+          <text>Credits</text>
+        </navLabel>
+        <content src="front-A.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint5" playOrder="4">
+        <navLabel>
+          <text>Preface to the Second Edition</text>
+        </navLabel>
+        <content src="front-B.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint6" playOrder="5">
+        <navLabel>
+          <text>Dedication</text>
+        </navLabel>
+        <content src="front-C.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint7" playOrder="6">
+        <navLabel>
+          <text>Foreword and Warning</text>
+        </navLabel>
+        <content src="front-D.xhtml" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint8" playOrder="7">
+      <navLabel>
+        <text>Part I. The Fundamentals</text>
+      </navLabel>
+      <content src="part-I.xhtml" />  
+      <navPoint id="navPoint9" playOrder="7">
+        <navLabel>
+          <text>Part I. The Fundamentals</text>
+        </navLabel>
+        <content src="part-I.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint10" playOrder="8">
+        <navLabel>
+          <text>1. Introduction to Part I</text>
+        </navLabel>
+        <content src="ch-01.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint11" playOrder="9">
+        <navLabel>
+          <text>2. Morality, The First and Last Training</text>
+        </navLabel>
+        <content src="ch-02.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint12" playOrder="10">
+        <navLabel>
+          <text>3. Concentration, The Second Training</text>
+        </navLabel>
+        <content src="ch-03.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint13" playOrder="11">
+        <navLabel>
+          <text>4. Wisdom, The Third Training</text>
+        </navLabel>
+        <content src="ch-04.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint14" playOrder="12">
+        <navLabel>
+          <text>5. The Three Characteristics</text>
+        </navLabel>
+        <content src="ch-05.xhtml" />  
+        <navPoint id="navPoint15" playOrder="12">
+          <navLabel>
+            <text>5. The Three Characteristics</text>
+          </navLabel>
+          <content src="ch-05.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint16" playOrder="13">
+          <navLabel>
+            <text>Impermanence</text>
+          </navLabel>
+          <content src="ch-05.xhtml#impermanence" />  
+        </navPoint>
+        <navPoint id="navPoint17" playOrder="14">
+          <navLabel>
+            <text>Dissatisfactoriness</text>
+          </navLabel>
+          <content src="ch-05.xhtml#dissatisfactoriness" />  
+        </navPoint>
+        <navPoint id="navPoint18" playOrder="15">
+          <navLabel>
+            <text>No-Self</text>
+          </navLabel>
+          <content src="ch-05.xhtml#no-self" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint19" playOrder="16">
+        <navLabel>
+          <text>6. The Five Spiritual Faculties</text>
+        </navLabel>
+        <content src="ch-06.xhtml" />  
+        <navPoint id="navPoint20" playOrder="16">
+          <navLabel>
+            <text>6. The Five Spiritual Faculties</text>
+          </navLabel>
+          <content src="ch-06.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint21" playOrder="17">
+          <navLabel>
+            <text>Faith and Wisdom</text>
+          </navLabel>
+          <content src="ch-06.xhtml#faith-and-wisdom" />  
+        </navPoint>
+        <navPoint id="navPoint22" playOrder="18">
+          <navLabel>
+            <text>Energy and Concentration</text>
+          </navLabel>
+          <content src="ch-06.xhtml#energy-and-concentration" />  
+        </navPoint>
+        <navPoint id="navPoint23" playOrder="19">
+          <navLabel>
+            <text>Mindfulness</text>
+          </navLabel>
+          <content src="ch-06.xhtml#mindfulness" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint24" playOrder="20">
+        <navLabel>
+          <text>7. The Seven Factors of Awakening</text>
+        </navLabel>
+        <content src="ch-07.xhtml" />  
+        <navPoint id="navPoint25" playOrder="20">
+          <navLabel>
+            <text>7. The Seven Factors of Awakening</text>
+          </navLabel>
+          <content src="ch-07.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint26" playOrder="21">
+          <navLabel>
+            <text>Mindfulness</text>
+          </navLabel>
+          <content src="ch-07.xhtml#mindfulness" />  
+        </navPoint>
+        <navPoint id="navPoint27" playOrder="22">
+          <navLabel>
+            <text>Investigation</text>
+          </navLabel>
+          <content src="ch-07.xhtml#investigation" />  
+        </navPoint>
+        <navPoint id="navPoint28" playOrder="23">
+          <navLabel>
+            <text>Energy</text>
+          </navLabel>
+          <content src="ch-07.xhtml#energy" />  
+        </navPoint>
+        <navPoint id="navPoint29" playOrder="24">
+          <navLabel>
+            <text>Rapture</text>
+          </navLabel>
+          <content src="ch-07.xhtml#rapture" />  
+        </navPoint>
+        <navPoint id="navPoint30" playOrder="25">
+          <navLabel>
+            <text>Tranquility</text>
+          </navLabel>
+          <content src="ch-07.xhtml#tranquility" />  
+        </navPoint>
+        <navPoint id="navPoint31" playOrder="26">
+          <navLabel>
+            <text>Concentration</text>
+          </navLabel>
+          <content src="ch-07.xhtml#concentration" />  
+        </navPoint>
+        <navPoint id="navPoint32" playOrder="27">
+          <navLabel>
+            <text>Equanimity</text>
+          </navLabel>
+          <content src="ch-07.xhtml#equanimity" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint33" playOrder="28">
+        <navLabel>
+          <text>8. The Three Trainings Revisited</text>
+        </navLabel>
+        <content src="ch-08.xhtml" />  
+        <navPoint id="navPoint34" playOrder="28">
+          <navLabel>
+            <text>8. The Three Trainings Revisited</text>
+          </navLabel>
+          <content src="ch-08.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint35" playOrder="29">
+          <navLabel>
+            <text>Happiness</text>
+          </navLabel>
+          <content src="ch-08.xhtml#happiness" />  
+        </navPoint>
+        <navPoint id="navPoint36" playOrder="30">
+          <navLabel>
+            <text>Renunciation</text>
+          </navLabel>
+          <content src="ch-08.xhtml#renunciation" />  
+        </navPoint>
+        <navPoint id="navPoint37" playOrder="31">
+          <navLabel>
+            <text>Suffering</text>
+          </navLabel>
+          <content src="ch-08.xhtml#suffering" />  
+        </navPoint>
+        <navPoint id="navPoint38" playOrder="32">
+          <navLabel>
+            <text>Awakening</text>
+          </navLabel>
+          <content src="ch-08.xhtml#awakening" />  
+        </navPoint>
+        <navPoint id="navPoint39" playOrder="33">
+          <navLabel>
+            <text>The Play</text>
+          </navLabel>
+          <content src="ch-08.xhtml#the-play" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint40" playOrder="34">
+        <navLabel>
+          <text>9. The Four Noble Truths</text>
+        </navLabel>
+        <content src="ch-09.xhtml" />  
+        <navPoint id="navPoint41" playOrder="34">
+          <navLabel>
+            <text>9. The Four Noble Truths</text>
+          </navLabel>
+          <content src="ch-09.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint42" playOrder="35">
+          <navLabel>
+            <text>Truth Number One: There Is Suffering</text>
+          </navLabel>
+          <content src="ch-09.xhtml#truth-number-one-there-is-suffering" />  
+        </navPoint>
+        <navPoint id="navPoint43" playOrder="36">
+          <navLabel>
+            <text>Truth Number Two: There Is the Cause of Suffering</text>
+          </navLabel>
+          <content src="ch-09.xhtml#truth-number-two-there-is-the-cause-of-suffering" />  
+        </navPoint>
+        <navPoint id="navPoint44" playOrder="37">
+          <navLabel>
+            <text>Truth Number Three: There Is the End of Suffering</text>
+          </navLabel>
+          <content src="ch-09.xhtml#truth-number-three-there-is-the-end-of-suffering" />  
+        </navPoint>
+        <navPoint id="navPoint45" playOrder="38">
+          <navLabel>
+            <text>Truth Number Four: The Noble Eightfold Path</text>
+          </navLabel>
+          <content src="ch-09.xhtml#truth-number-four-the-noble-eightfold-path" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint46" playOrder="39">
+        <navLabel>
+          <text>10. Objects for Insight Practice</text>
+        </navLabel>
+        <content src="ch-10.xhtml" />  
+        <navPoint id="navPoint47" playOrder="39">
+          <navLabel>
+            <text>10. Objects for Insight Practice</text>
+          </navLabel>
+          <content src="ch-10.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint48" playOrder="40">
+          <navLabel>
+            <text>When, Where, and For How Long?</text>
+          </navLabel>
+          <content src="ch-10.xhtml#when-where-and-for-how-long" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint49" playOrder="41">
+        <navLabel>
+          <text>11. On Teachers</text>
+        </navLabel>
+        <content src="ch-11.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint50" playOrder="42">
+        <navLabel>
+          <text>12. Daily Life and Retreats</text>
+        </navLabel>
+        <content src="ch-12.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint51" playOrder="43">
+        <navLabel>
+          <text>13. A Few Odds and Ends About Retreats</text>
+        </navLabel>
+        <content src="ch-13.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint52" playOrder="44">
+        <navLabel>
+          <text>14. Post-Retreat Advice</text>
+        </navLabel>
+        <content src="ch-14.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint53" playOrder="45">
+        <navLabel>
+          <text>15. Postures</text>
+        </navLabel>
+        <content src="ch-15.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint54" playOrder="46">
+        <navLabel>
+          <text>16. Resolve</text>
+        </navLabel>
+        <content src="ch-16.xhtml" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint55" playOrder="47">
+      <navLabel>
+        <text>Part II. Light and Shadows</text>
+      </navLabel>
+      <content src="part-II.xhtml" />  
+      <navPoint id="navPoint56" playOrder="47">
+        <navLabel>
+          <text>Part II. Light and Shadows</text>
+        </navLabel>
+        <content src="part-II.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint57" playOrder="48">
+        <navLabel>
+          <text>17. Introduction to Parts Two through Five</text>
+        </navLabel>
+        <content src="ch-17.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint58" playOrder="49">
+        <navLabel>
+          <text>18. Buddhism versus The Buddha ⚡</text>
+        </navLabel>
+        <content src="ch-18.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint59" playOrder="50">
+        <navLabel>
+          <text>19. Content and Ultimate Reality ⚡</text>
+        </navLabel>
+        <content src="ch-19.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint60" playOrder="51">
+        <navLabel>
+          <text>20. What Went Wrong ⚡</text>
+        </navLabel>
+        <content src="ch-20.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint61" playOrder="52">
+        <navLabel>
+          <text>21. A Clear Goal</text>
+        </navLabel>
+        <content src="ch-21.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint62" playOrder="53">
+        <navLabel>
+          <text>22. Harnessing the Energy of the Defilements</text>
+        </navLabel>
+        <content src="ch-22.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint63" playOrder="54">
+        <navLabel>
+          <text>23. Right Thought and the Augean Stables</text>
+        </navLabel>
+        <content src="ch-23.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint64" playOrder="55">
+        <navLabel>
+          <text>24. From Content to Insight</text>
+        </navLabel>
+        <content src="ch-24.xhtml" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint65" playOrder="56">
+      <navLabel>
+        <text>Part III. The Samatha Jhanas</text>
+      </navLabel>
+      <content src="part-III.xhtml" />  
+      <navPoint id="navPoint66" playOrder="56">
+        <navLabel>
+          <text>Part III. The Samatha Jhanas</text>
+        </navLabel>
+        <content src="part-III.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint67" playOrder="57">
+        <navLabel>
+          <text>25. Introduction to Part Three</text>
+        </navLabel>
+        <content src="ch-25.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint68" playOrder="58">
+        <navLabel>
+          <text>26. The Wide World of Jhana</text>
+        </navLabel>
+        <content src="ch-26.xhtml" />  
+        <navPoint id="navPoint69" playOrder="58">
+          <navLabel>
+            <text>26. The Wide World of Jhana</text>
+          </navLabel>
+          <content src="ch-26.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint70" playOrder="59">
+          <navLabel>
+            <text>The First Jhana</text>
+          </navLabel>
+          <content src="ch-26.xhtml#the-first-jhana" />  
+        </navPoint>
+        <navPoint id="navPoint71" playOrder="60">
+          <navLabel>
+            <text>The Second Jhana</text>
+          </navLabel>
+          <content src="ch-26.xhtml#the-second-jhana" />  
+        </navPoint>
+        <navPoint id="navPoint72" playOrder="61">
+          <navLabel>
+            <text>The Third Jhana</text>
+          </navLabel>
+          <content src="ch-26.xhtml#the-third-jhana" />  
+        </navPoint>
+        <navPoint id="navPoint73" playOrder="62">
+          <navLabel>
+            <text>The Fourth Jhana</text>
+          </navLabel>
+          <content src="ch-26.xhtml#the-fourth-jhana" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint74" playOrder="63">
+        <navLabel>
+          <text>27. The Concentration States (Shamatha Jhanas)</text>
+        </navLabel>
+        <content src="ch-27.xhtml" />  
+        <navPoint id="navPoint75" playOrder="63">
+          <navLabel>
+            <text>27. The Concentration States (Shamatha Jhanas)</text>
+          </navLabel>
+          <content src="ch-27.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint76" playOrder="64">
+          <navLabel>
+            <text>The First Shamatha Jhana</text>
+          </navLabel>
+          <content src="ch-27.xhtml#the-first-shamatha-jhana" />  
+        </navPoint>
+        <navPoint id="navPoint77" playOrder="65">
+          <navLabel>
+            <text>The Second Shamatha Jhana</text>
+          </navLabel>
+          <content src="ch-27.xhtml#the-second-shamatha-jhana" />  
+        </navPoint>
+        <navPoint id="navPoint78" playOrder="66">
+          <navLabel>
+            <text>The Third Shamatha Jhana</text>
+          </navLabel>
+          <content src="ch-27.xhtml#the-third-shamatha-jhana" />  
+        </navPoint>
+        <navPoint id="navPoint79" playOrder="67">
+          <navLabel>
+            <text>The Fourth Shamatha Jhana</text>
+          </navLabel>
+          <content src="ch-27.xhtml#the-fourth-shamatha-jhana" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint80" playOrder="68">
+        <navLabel>
+          <text>28. The Formless Realms</text>
+        </navLabel>
+        <content src="ch-28.xhtml" />  
+        <navPoint id="navPoint81" playOrder="68">
+          <navLabel>
+            <text>28. The Formless Realms</text>
+          </navLabel>
+          <content src="ch-28.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint82" playOrder="69">
+          <navLabel>
+            <text>The Fifth Jhana, Boundless Space</text>
+          </navLabel>
+          <content src="ch-28.xhtml#the-fifth-jhana-boundless-space" />  
+        </navPoint>
+        <navPoint id="navPoint83" playOrder="70">
+          <navLabel>
+            <text>The Sixth Jhana, Boundless Consciousness</text>
+          </navLabel>
+          <content src="ch-28.xhtml#the-sixth-jhana-boundless-consciousness" />  
+        </navPoint>
+        <navPoint id="navPoint84" playOrder="71">
+          <navLabel>
+            <text>The Seventh Jhana, Nothingness</text>
+          </navLabel>
+          <content src="ch-28.xhtml#the-seventh-jhana-nothingness" />  
+        </navPoint>
+        <navPoint id="navPoint85" playOrder="72">
+          <navLabel>
+            <text>The Eighth Jhana, Neither Perception Nor Non-Perception</text>
+          </navLabel>
+          <content src="ch-28.xhtml#the-eighth-jhana-neither-perception-nor-non-perception" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint86" playOrder="73">
+        <navLabel>
+          <text>29. Kasina Practice</text>
+        </navLabel>
+        <content src="ch-29.xhtml" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint87" playOrder="74">
+      <navLabel>
+        <text>Part IV. Insight</text>
+      </navLabel>
+      <content src="part-IV.xhtml" />  
+      <navPoint id="navPoint88" playOrder="74">
+        <navLabel>
+          <text>Part IV. Insight</text>
+        </navLabel>
+        <content src="part-IV.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint89" playOrder="75">
+        <navLabel>
+          <text>30. The Progress of Insight</text>
+        </navLabel>
+        <content src="ch-30.xhtml" />  
+        <navPoint id="navPoint90" playOrder="75">
+          <navLabel>
+            <text>30. The Progress of Insight</text>
+          </navLabel>
+          <content src="ch-30.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint91" playOrder="76">
+          <navLabel>
+            <text>1. Mind and Body</text>
+          </navLabel>
+          <content src="ch-30.xhtml#mind-and-body" />  
+        </navPoint>
+        <navPoint id="navPoint92" playOrder="77">
+          <navLabel>
+            <text>2. Cause and Effect</text>
+          </navLabel>
+          <content src="ch-30.xhtml#cause-and-effect" />  
+        </navPoint>
+        <navPoint id="navPoint93" playOrder="78">
+          <navLabel>
+            <text>3. The Three Characteristics</text>
+          </navLabel>
+          <content src="ch-30.xhtml#the-three-characteristics" />  
+        </navPoint>
+        <navPoint id="navPoint94" playOrder="79">
+          <navLabel>
+            <text>4. The Arising and Passing Away</text>
+          </navLabel>
+          <content src="ch-30.xhtml#the-arising-and-passing-away" />  
+        </navPoint>
+        <navPoint id="navPoint95" playOrder="80">
+          <navLabel>
+            <text>5. Dissolution, Entrance to the Dark Night</text>
+          </navLabel>
+          <content src="ch-30.xhtml#dissolution-entrance-to-the-dark-night" />  
+        </navPoint>
+        <navPoint id="navPoint96" playOrder="81">
+          <navLabel>
+            <text>6. Fear</text>
+          </navLabel>
+          <content src="ch-30.xhtml#fear" />  
+        </navPoint>
+        <navPoint id="navPoint97" playOrder="82">
+          <navLabel>
+            <text>7. Misery</text>
+          </navLabel>
+          <content src="ch-30.xhtml#misery" />  
+        </navPoint>
+        <navPoint id="navPoint98" playOrder="83">
+          <navLabel>
+            <text>8.  Disgust</text>
+          </navLabel>
+          <content src="ch-30.xhtml#disgust" />  
+        </navPoint>
+        <navPoint id="navPoint99" playOrder="84">
+          <navLabel>
+            <text>9. Desire for Deliverance</text>
+          </navLabel>
+          <content src="ch-30.xhtml#desire-for-deliverance" />  
+        </navPoint>
+        <navPoint id="navPoint100" playOrder="85">
+          <navLabel>
+            <text>10. Re-observation</text>
+          </navLabel>
+          <content src="ch-30.xhtml#re-observation" />  
+        </navPoint>
+        <navPoint id="navPoint101" playOrder="86">
+          <navLabel>
+            <text>11. Equanimity</text>
+          </navLabel>
+          <content src="ch-30.xhtml#equanimity" />  
+        </navPoint>
+        <navPoint id="navPoint102" playOrder="87">
+          <navLabel>
+            <text>12. Conformity</text>
+          </navLabel>
+          <content src="ch-30.xhtml#conformity" />  
+        </navPoint>
+        <navPoint id="navPoint103" playOrder="88">
+          <navLabel>
+            <text>13. Change of Lineage</text>
+          </navLabel>
+          <content src="ch-30.xhtml#change-of-lineage" />  
+        </navPoint>
+        <navPoint id="navPoint104" playOrder="89">
+          <navLabel>
+            <text>14. Path</text>
+          </navLabel>
+          <content src="ch-30.xhtml#path" />  
+        </navPoint>
+        <navPoint id="navPoint105" playOrder="90">
+          <navLabel>
+            <text>15. Fruition</text>
+          </navLabel>
+          <content src="ch-30.xhtml#fruition" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint106" playOrder="91">
+        <navLabel>
+          <text>31. The Three Doors</text>
+        </navLabel>
+        <content src="ch-31.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint107" playOrder="92">
+        <navLabel>
+          <text>32. “What Was That?”</text>
+        </navLabel>
+        <content src="ch-32.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint108" playOrder="93">
+        <navLabel>
+          <text>33. Review</text>
+        </navLabel>
+        <content src="ch-33.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint109" playOrder="94">
+        <navLabel>
+          <text>34. The Vipassana Jhanas</text>
+        </navLabel>
+        <content src="ch-34.xhtml" />  
+        <navPoint id="navPoint110" playOrder="94">
+          <navLabel>
+            <text>34. The Vipassana Jhanas</text>
+          </navLabel>
+          <content src="ch-34.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint111" playOrder="95">
+          <navLabel>
+            <text>Bill Hamilton’s Model</text>
+          </navLabel>
+          <content src="ch-34.xhtml#bill-hamiltons-model" />  
+        </navPoint>
+        <navPoint id="navPoint112" playOrder="96">
+          <navLabel>
+            <text>Fractals</text>
+          </navLabel>
+          <content src="ch-34.xhtml#fractals" />  
+        </navPoint>
+        <navPoint id="navPoint113" playOrder="97">
+          <navLabel>
+            <text>U Pandita’s Model</text>
+          </navLabel>
+          <content src="ch-34.xhtml#u-panditas-model" />  
+        </navPoint>
+        <navPoint id="navPoint114" playOrder="98">
+          <navLabel>
+            <text>One More Model</text>
+          </navLabel>
+          <content src="ch-34.xhtml#one-more-model" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint115" playOrder="99">
+        <navLabel>
+          <text>35. How the Maps Help</text>
+        </navLabel>
+        <content src="ch-35.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint116" playOrder="100">
+        <navLabel>
+          <text>36. Beyond First Path (“What Next?”)</text>
+        </navLabel>
+        <content src="ch-36.xhtml" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint117" playOrder="101">
+      <navLabel>
+        <text>Part V. Awakening</text>
+      </navLabel>
+      <content src="part-V.xhtml" />  
+      <navPoint id="navPoint118" playOrder="101">
+        <navLabel>
+          <text>Part V. Awakening</text>
+        </navLabel>
+        <content src="part-V.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint119" playOrder="102">
+        <navLabel>
+          <text>37. Models of the Stages of Awakening ⚡</text>
+        </navLabel>
+        <content src="ch-37.xhtml" />  
+        <navPoint id="navPoint120" playOrder="102">
+          <navLabel>
+            <text>37. Models of the Stages of Awakening ⚡</text>
+          </navLabel>
+          <content src="ch-37.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint121" playOrder="103">
+          <navLabel>
+            <text>General Problems with Current Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#general-problems-with-current-models" />  
+        </navPoint>
+        <navPoint id="navPoint122" playOrder="104">
+          <navLabel>
+            <text>Models that are Mostly Unhelpful</text>
+          </navLabel>
+          <content src="ch-37.xhtml#models-that-are-mostly-unhelpful" />  
+        </navPoint>
+        <navPoint id="navPoint123" playOrder="105">
+          <navLabel>
+            <text>The Non-Duality Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-non-duality-models" />  
+        </navPoint>
+        <navPoint id="navPoint124" playOrder="106">
+          <navLabel>
+            <text>The Sudden Schools of Awakening</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-sudden-schools-of-awakening" />  
+        </navPoint>
+        <navPoint id="navPoint125" playOrder="107">
+          <navLabel>
+            <text>The Direct Perception Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-direct-perception-models" />  
+        </navPoint>
+        <navPoint id="navPoint126" playOrder="108">
+          <navLabel>
+            <text>Time and Space Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#time-and-space-models" />  
+        </navPoint>
+        <navPoint id="navPoint127" playOrder="109">
+          <navLabel>
+            <text>The Fundamental Perception Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-fundamental-perception-models" />  
+        </navPoint>
+        <navPoint id="navPoint128" playOrder="110">
+          <navLabel>
+            <text>The Specific Perception Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-specific-perception-models" />  
+        </navPoint>
+        <navPoint id="navPoint129" playOrder="111">
+          <navLabel>
+            <text>The Emotional Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-emotional-models" />  
+        </navPoint>
+        <navPoint id="navPoint130" playOrder="112">
+          <navLabel>
+            <text>The Theravada Four Path Model</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-theravada-four-path-model" />  
+        </navPoint>
+        <navPoint id="navPoint131" playOrder="113">
+          <navLabel>
+            <text>A Revised Four Path Model</text>
+          </navLabel>
+          <content src="ch-37.xhtml#a-revised-four-path-model" />  
+        </navPoint>
+        <navPoint id="navPoint132" playOrder="114">
+          <navLabel>
+            <text>The Bodhisattva Bhumi Model</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-bodhisattva-bhumi-model" />  
+        </navPoint>
+        <navPoint id="navPoint133" playOrder="115">
+          <navLabel>
+            <text>The Mahayana Five Path Model</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-mahayana-five-path-model" />  
+        </navPoint>
+        <navPoint id="navPoint134" playOrder="116">
+          <navLabel>
+            <text>The Vajrayana Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-vajrayana-models" />  
+        </navPoint>
+        <navPoint id="navPoint135" playOrder="117">
+          <navLabel>
+            <text>The Concentration Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-concentration-models" />  
+        </navPoint>
+        <navPoint id="navPoint136" playOrder="118">
+          <navLabel>
+            <text>Nirodha Samapatti</text>
+          </navLabel>
+          <content src="ch-37.xhtml#nirodha-samapatti" />  
+        </navPoint>
+        <navPoint id="navPoint137" playOrder="119">
+          <navLabel>
+            <text>Back to the Vajrayana Story</text>
+          </navLabel>
+          <content src="ch-37.xhtml#back-to-the-vajrayana-story" />  
+        </navPoint>
+        <navPoint id="navPoint138" playOrder="120">
+          <navLabel>
+            <text>The Simple Model</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-simple-model" />  
+        </navPoint>
+        <navPoint id="navPoint139" playOrder="121">
+          <navLabel>
+            <text>The Action Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-action-models" />  
+        </navPoint>
+        <navPoint id="navPoint140" playOrder="122">
+          <navLabel>
+            <text>The Perfect Speech Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-perfect-speech-models" />  
+        </navPoint>
+        <navPoint id="navPoint141" playOrder="123">
+          <navLabel>
+            <text>The Perfect Internet Behavior Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-perfect-internet-behavior-models" />  
+        </navPoint>
+        <navPoint id="navPoint142" playOrder="124">
+          <navLabel>
+            <text>The Powers Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-powers-models" />  
+        </navPoint>
+        <navPoint id="navPoint143" playOrder="125">
+          <navLabel>
+            <text>The Sleep Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-sleep-models" />  
+        </navPoint>
+        <navPoint id="navPoint144" playOrder="126">
+          <navLabel>
+            <text>The Specific Knowledge Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-specific-knowledge-models" />  
+        </navPoint>
+        <navPoint id="navPoint145" playOrder="127">
+          <navLabel>
+            <text>The Psychological Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-psychological-models" />  
+        </navPoint>
+        <navPoint id="navPoint146" playOrder="128">
+          <navLabel>
+            <text>The No-Thought Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-no-thought-models" />  
+        </navPoint>
+        <navPoint id="navPoint147" playOrder="129">
+          <navLabel>
+            <text>The God Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-god-models" />  
+        </navPoint>
+        <navPoint id="navPoint148" playOrder="130">
+          <navLabel>
+            <text>The Unity Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-unity-models" />  
+        </navPoint>
+        <navPoint id="navPoint149" playOrder="131">
+          <navLabel>
+            <text>The True Self Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-true-self-models" />  
+        </navPoint>
+        <navPoint id="navPoint150" playOrder="132">
+          <navLabel>
+            <text>The Physical Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-physical-models" />  
+        </navPoint>
+        <navPoint id="navPoint151" playOrder="133">
+          <navLabel>
+            <text>The Biological Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-biological-models" />  
+        </navPoint>
+        <navPoint id="navPoint152" playOrder="134">
+          <navLabel>
+            <text>The Radiance Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-radiance-models" />  
+        </navPoint>
+        <navPoint id="navPoint153" playOrder="135">
+          <navLabel>
+            <text>The Karma Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-karma-models" />  
+        </navPoint>
+        <navPoint id="navPoint154" playOrder="136">
+          <navLabel>
+            <text>The Perpetual Bliss Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-perpetual-bliss-models" />  
+        </navPoint>
+        <navPoint id="navPoint155" playOrder="137">
+          <navLabel>
+            <text>The Three Kayas</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-three-kayas" />  
+        </navPoint>
+        <navPoint id="navPoint156" playOrder="138">
+          <navLabel>
+            <text>The Immortality Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-immortality-models" />  
+        </navPoint>
+        <navPoint id="navPoint157" playOrder="139">
+          <navLabel>
+            <text>The Transcendence Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-transcendence-models" />  
+        </navPoint>
+        <navPoint id="navPoint158" playOrder="140">
+          <navLabel>
+            <text>The Extinction Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-extinction-models" />  
+        </navPoint>
+        <navPoint id="navPoint159" playOrder="141">
+          <navLabel>
+            <text>The Love Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-love-models" />  
+        </navPoint>
+        <navPoint id="navPoint160" playOrder="142">
+          <navLabel>
+            <text>The Equanimity Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-equanimity-models" />  
+        </navPoint>
+        <navPoint id="navPoint161" playOrder="143">
+          <navLabel>
+            <text>The No-Preference Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-no-preference-models" />  
+        </navPoint>
+        <navPoint id="navPoint162" playOrder="144">
+          <navLabel>
+            <text>The Special Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-special-models" />  
+        </navPoint>
+        <navPoint id="navPoint163" playOrder="145">
+          <navLabel>
+            <text>The Social Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-social-models" />  
+        </navPoint>
+        <navPoint id="navPoint164" playOrder="146">
+          <navLabel>
+            <text>The Ultimate Reality versus Unreality Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-ultimate-reality-versus-unreality-models" />  
+        </navPoint>
+        <navPoint id="navPoint165" playOrder="147">
+          <navLabel>
+            <text>The Meaning Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-meaning-models" />  
+        </navPoint>
+        <navPoint id="navPoint166" playOrder="148">
+          <navLabel>
+            <text>The Three Yanas</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-three-yanas" />  
+        </navPoint>
+        <navPoint id="navPoint167" playOrder="149">
+          <navLabel>
+            <text>Ditching our “Stuff” versus Ditching the Split</text>
+          </navLabel>
+          <content src="ch-37.xhtml#ditching-our-stuff-versus-ditching-the-split" />  
+        </navPoint>
+        <navPoint id="navPoint168" playOrder="150">
+          <navLabel>
+            <text>The “Nothing To Do” and “You Are Already There” Schools</text>
+          </navLabel>
+          <content src="ch-37.xhtml#the-nothing-to-do-and-you-are-already-there-schools" />  
+        </navPoint>
+        <navPoint id="navPoint169" playOrder="151">
+          <navLabel>
+            <text>Depths of Realization and Integration</text>
+          </navLabel>
+          <content src="ch-37.xhtml#depths-of-realization-and-integration" />  
+        </navPoint>
+        <navPoint id="navPoint170" playOrder="152">
+          <navLabel>
+            <text>Archetypes, Roles, Inspiration, and Becoming</text>
+          </navLabel>
+          <content src="ch-37.xhtml#archetypes-roles-inspiration-and-becoming" />  
+        </navPoint>
+        <navPoint id="navPoint171" playOrder="153">
+          <navLabel>
+            <text>Dependent Origination</text>
+          </navLabel>
+          <content src="ch-37.xhtml#dependent-origination" />  
+        </navPoint>
+        <navPoint id="navPoint172" playOrder="154">
+          <navLabel>
+            <text>Final Points</text>
+          </navLabel>
+          <content src="ch-37.xhtml#final-points" />  
+        </navPoint>
+        <navPoint id="navPoint173" playOrder="155">
+          <navLabel>
+            <text>Towards Contemporary Models</text>
+          </navLabel>
+          <content src="ch-37.xhtml#towards-contemporary-models" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint174" playOrder="156">
+        <navLabel>
+          <text>38. Integration</text>
+        </navLabel>
+        <content src="ch-38.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint175" playOrder="157">
+        <navLabel>
+          <text>39. It Is Possible!</text>
+        </navLabel>
+        <content src="ch-39.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint176" playOrder="158">
+        <navLabel>
+          <text>40. More on the “Mushroom Factor” ⚡</text>
+        </navLabel>
+        <content src="ch-40.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint177" playOrder="159">
+        <navLabel>
+          <text>41. So, Who the Heck is Daniel M. Ingram?</text>
+        </navLabel>
+        <content src="ch-41.xhtml" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint178" playOrder="160">
+      <navLabel>
+        <text>Part VI. My Spiritual Quest</text>
+      </navLabel>
+      <content src="part-VI.xhtml" />  
+      <navPoint id="navPoint179" playOrder="160">
+        <navLabel>
+          <text>Part VI. My Spiritual Quest</text>
+        </navLabel>
+        <content src="part-VI.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint180" playOrder="161">
+        <navLabel>
+          <text>42. Backstory</text>
+        </navLabel>
+        <content src="ch-42.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint181" playOrder="162">
+        <navLabel>
+          <text>43. The Early Years</text>
+        </navLabel>
+        <content src="ch-43.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint182" playOrder="163">
+        <navLabel>
+          <text>44. Bodysurfing</text>
+        </navLabel>
+        <content src="ch-44.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint183" playOrder="164">
+        <navLabel>
+          <text>45. College and Pre-Buddhist Exploration</text>
+        </navLabel>
+        <content src="ch-45.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint184" playOrder="165">
+        <navLabel>
+          <text>46. The Middle Years</text>
+        </navLabel>
+        <content src="ch-46.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint185" playOrder="166">
+        <navLabel>
+          <text>47. Thank U, India</text>
+        </navLabel>
+        <content src="ch-47.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint186" playOrder="167">
+        <navLabel>
+          <text>48. The First Bodh Gaya Retreat</text>
+        </navLabel>
+        <content src="ch-48.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint187" playOrder="168">
+        <navLabel>
+          <text>49. The First MBMC Retreat</text>
+        </navLabel>
+        <content src="ch-49.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint188" playOrder="169">
+        <navLabel>
+          <text>50. The Dark Night Gets Ugly</text>
+        </navLabel>
+        <content src="ch-50.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint189" playOrder="170">
+        <navLabel>
+          <text>51. The Second Bodh Gaya Retreat</text>
+        </navLabel>
+        <content src="ch-51.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint190" playOrder="171">
+        <navLabel>
+          <text>52. The Great Stream Enterer</text>
+        </navLabel>
+        <content src="ch-52.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint191" playOrder="172">
+        <navLabel>
+          <text>53. Dharma Power, Dharma Poison</text>
+        </navLabel>
+        <content src="ch-53.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint192" playOrder="173">
+        <navLabel>
+          <text>54. The Middle Paths</text>
+        </navLabel>
+        <content src="ch-54.xhtml" />  
+        <navPoint id="navPoint193" playOrder="173">
+          <navLabel>
+            <text>54. The Middle Paths</text>
+          </navLabel>
+          <content src="ch-54.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint194" playOrder="174">
+          <navLabel>
+            <text>Slam-Shifting Ñanas and Jhanas</text>
+          </navLabel>
+          <content src="ch-54.xhtml#slam-shifting-nanas-and-jhanas" />  
+        </navPoint>
+        <navPoint id="navPoint195" playOrder="175">
+          <navLabel>
+            <text>Luminosity</text>
+          </navLabel>
+          <content src="ch-54.xhtml#luminosity" />  
+        </navPoint>
+        <navPoint id="navPoint196" playOrder="176">
+          <navLabel>
+            <text>Nirodha Samapatti</text>
+          </navLabel>
+          <content src="ch-54.xhtml#nirodha-samapatti" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint197" playOrder="177">
+        <navLabel>
+          <text>55. Map Failure</text>
+        </navLabel>
+        <content src="ch-55.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint198" playOrder="178">
+        <navLabel>
+          <text>56. Wandering</text>
+        </navLabel>
+        <content src="ch-56.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint199" playOrder="179">
+        <navLabel>
+          <text>57. Kasinas, Powers, and Retreats</text>
+        </navLabel>
+        <content src="ch-57.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint200" playOrder="180">
+        <navLabel>
+          <text>58. Introduction to the Powers</text>
+        </navLabel>
+        <content src="ch-58.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint201" playOrder="181">
+        <navLabel>
+          <text>59. Are the Powers Real?</text>
+        </navLabel>
+        <content src="ch-59.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint202" playOrder="182">
+        <navLabel>
+          <text>60. Paradigm Fluency</text>
+        </navLabel>
+        <content src="ch-60.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint203" playOrder="183">
+        <navLabel>
+          <text>61. Crazy?</text>
+        </navLabel>
+        <content src="ch-61.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint204" playOrder="184">
+        <navLabel>
+          <text>62. Those Damn Fairies …</text>
+        </navLabel>
+        <content src="ch-62.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint205" playOrder="185">
+        <navLabel>
+          <text>63. Definitions of the Powers</text>
+        </navLabel>
+        <content src="ch-63.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint206" playOrder="186">
+        <navLabel>
+          <text>64. Ethics and the Powers</text>
+        </navLabel>
+        <content src="ch-64.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint207" playOrder="187">
+        <navLabel>
+          <text>65. How to Cultivate the Powers</text>
+        </navLabel>
+        <content src="ch-65.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint208" playOrder="188">
+        <navLabel>
+          <text>66. Made Pliant and Malleable</text>
+        </navLabel>
+        <content src="ch-66.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint209" playOrder="189">
+        <navLabel>
+          <text>67. Benefits of the Powers</text>
+        </navLabel>
+        <content src="ch-67.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint210" playOrder="190">
+        <navLabel>
+          <text>68. Magick and the Brahma Viharas</text>
+        </navLabel>
+        <content src="ch-68.xhtml" />  
+        <navPoint id="navPoint211" playOrder="190">
+          <navLabel>
+            <text>68. Magick and the Brahma Viharas</text>
+          </navLabel>
+          <content src="ch-68.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint212" playOrder="191">
+          <navLabel>
+            <text>Formal Definitions</text>
+          </navLabel>
+          <content src="ch-68.xhtml#formal-definitions" />  
+        </navPoint>
+        <navPoint id="navPoint213" playOrder="192">
+          <navLabel>
+            <text>The Brahma Viharas</text>
+          </navLabel>
+          <content src="ch-68.xhtml#the-brahma-viharas" />  
+        </navPoint>
+        <navPoint id="navPoint214" playOrder="193">
+          <navLabel>
+            <text>Bodhicitta as Magick</text>
+          </navLabel>
+          <content src="ch-68.xhtml#bodhicitta-as-magick" />  
+        </navPoint>
+        <navPoint id="navPoint215" playOrder="194">
+          <navLabel>
+            <text>Vipassana as Magick</text>
+          </navLabel>
+          <content src="ch-68.xhtml#vipassana-as-magick" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint216" playOrder="195">
+        <navLabel>
+          <text>69. Bhavana Society 2001 Retreat</text>
+        </navLabel>
+        <content src="ch-69.xhtml" />  
+        <navPoint id="navPoint217" playOrder="195">
+          <navLabel>
+            <text>69. Bhavana Society 2001 Retreat</text>
+          </navLabel>
+          <content src="ch-69.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint218" playOrder="196">
+          <navLabel>
+            <text>Fire Kasina Practice</text>
+          </navLabel>
+          <content src="ch-69.xhtml#fire-kasina-practice" />  
+        </navPoint>
+        <navPoint id="navPoint219" playOrder="197">
+          <navLabel>
+            <text>Morality and Magick</text>
+          </navLabel>
+          <content src="ch-69.xhtml#morality-and-magick" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint220" playOrder="198">
+        <navLabel>
+          <text>70. Around the World and Finding Home</text>
+        </navLabel>
+        <content src="ch-70.xhtml" />  
+        <navPoint id="navPoint221" playOrder="198">
+          <navLabel>
+            <text>70. Around the World and Finding Home</text>
+          </navLabel>
+          <content src="ch-70.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint222" playOrder="199">
+          <navLabel>
+            <text>The Second MBMC Retreat</text>
+          </navLabel>
+          <content src="ch-70.xhtml#the-second-mbmc-retreat" />  
+        </navPoint>
+        <navPoint id="navPoint223" playOrder="200">
+          <navLabel>
+            <text>Untangling</text>
+          </navLabel>
+          <content src="ch-70.xhtml#untangling" />  
+        </navPoint>
+        <navPoint id="navPoint224" playOrder="201">
+          <navLabel>
+            <text>Agencylessness</text>
+          </navLabel>
+          <content src="ch-70.xhtml#agencylessness" />  
+        </navPoint>
+        <navPoint id="navPoint225" playOrder="202">
+          <navLabel>
+            <text>Wobble and Fall</text>
+          </navLabel>
+          <content src="ch-70.xhtml#wobble-and-fall" />  
+        </navPoint>
+        <navPoint id="navPoint226" playOrder="203">
+          <navLabel>
+            <text>Vimuttimagga</text>
+          </navLabel>
+          <content src="ch-70.xhtml#vimuttimagga" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint227" playOrder="204">
+        <navLabel>
+          <text>71. More Practical Tidbits</text>
+        </navLabel>
+        <content src="ch-71.xhtml" />  
+        <navPoint id="navPoint228" playOrder="204">
+          <navLabel>
+            <text>71. More Practical Tidbits</text>
+          </navLabel>
+          <content src="ch-71.xhtml" />  
+        </navPoint>
+        <navPoint id="navPoint229" playOrder="205">
+          <navLabel>
+            <text>Describing Your Practice</text>
+          </navLabel>
+          <content src="ch-71.xhtml#describing-your-practice" />  
+        </navPoint>
+        <navPoint id="navPoint230" playOrder="206">
+          <navLabel>
+            <text>Dependent Origination Revisited</text>
+          </navLabel>
+          <content src="ch-71.xhtml#dependent-origination-revisited" />  
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint231" playOrder="207">
+      <navLabel>
+        <text>Final Wishes</text>
+      </navLabel>
+      <content src="back-A.xhtml" />  
+    </navPoint>
+    <navPoint id="navPoint232" playOrder="208">
+      <navLabel>
+        <text>Last Words of Wisdom</text>
+      </navLabel>
+      <content src="back-B.xhtml" />  
+    </navPoint>
+  </navMap>
+</ncx>
