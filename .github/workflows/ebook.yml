@@ -13,7 +13,7 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install xsltproc docbook-xml docbook-xsl docbook5-xml docbook-xsl-ns default-jre-headless texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-luatex latexmk fonts-texgyre fonts-lmodern gsfonts
           sudo rm /usr/lib/python3.??/EXTERNALLY-MANAGED # allow pip to mix with system pkgs
-          pip install sphinx jupyterlab nbconvert lxml GitPython roman plastex rich
+          pip install sphinx jupyterlab nbconvert lxml GitPython roman plastex rich sphinx-book-theme
       - name: Assemble sources 🔧
         run: make assemble
       - name: MCTB2 🔧
