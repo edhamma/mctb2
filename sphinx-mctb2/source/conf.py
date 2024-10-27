@@ -41,7 +41,7 @@ html_theme_options=dict(
 
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
-html_theme = project
+html_title = project
 
 
 epub_title = project
