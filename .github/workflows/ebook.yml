@@ -18,7 +18,9 @@ jobs:
       - name: MCTB2 🔧
         run: make mctb2
       - name: Web 🔧
-        run: cp index.html build/index.html
+        run: |
+          cp index.html build/index.html
+          touch build/.nojekyll
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
