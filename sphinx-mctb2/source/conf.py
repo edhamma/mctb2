@@ -19,7 +19,9 @@ version = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.todo']
+extensions = ['sphinx.ext.todo', 'myst_parser']
+myst_enable_extensions=['attrs_inline','linkify','colon_fence','attrs_block', 'deflist']
+
 todo_include_todos=True
 
 templates_path = ['_templates']
@@ -41,6 +43,7 @@ html_theme_options=dict(
 
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
+# html_css_files=[ 'custom.css' ]
 html_title = project
 
 

@@ -17,6 +17,8 @@ jobs:
         run: make assemble
       - name: MCTB2 🔧
         run: make mctb2
+      - name: Workaround double-quoted &amp; 🔧
+        run: perl -pi -e 's@&amp;@&@g' build/sphinx-mctb2/build/html/*.html
       - name: Web 🔧
         run: |
           cp index.html build/index.html

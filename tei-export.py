@@ -28,7 +28,7 @@ if 1:
 if 1:
     # sphinx
     os.makedirs('build/sphinx-mctb2/source',exist_ok=True)
-    sphinxWriter=tei_exporters.SphinxWriter(outdir='build/sphinx-mctb2/source',vimm=True,chapters_arabic=True)
+    sphinxWriter=tei_exporters.SphinxWriterMyST(outdir='build/sphinx-mctb2/source',vimm=True,chapters_arabic=True)
     # mctbTEI=etree.parse('mctb2.tei',etree.XMLParser(remove_comments=True)).getroot() 
     sphinxWriter.write(mctbTEI)
     sphinxWriter.writeIndex(title='Mastering the Core Teachings of the Buddha')

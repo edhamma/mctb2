@@ -39,7 +39,7 @@ class LatexWriter(object):
         if sect in ('chapter','part'):
             hy=('' if hyper is None else '\\vismHypertarget{'+hyper+'}')
             if 'subtitle_pali' not in e.attrib: return f'\\{sect}'+'['+t+']{'+t+hy+'}'
-            else: return f'\\{sect}[{t}]{{{t}{hy}\\newline{{\\textnormal{{\emph{{{e.attrib["subtitle_pali"]}}}}}}}}}'
+            else: return f'\\{sect}[{t}]{{{t}{hy}\\newline{{\\textnormal{{\\emph{{{e.attrib["subtitle_pali"]}}}}}}}}}'
         struct=e.getparent()
         if 'par_begin' in struct.attrib:
             p0,p1=int(struct.attrib['par_begin']),int(struct.attrib['par_end'])
@@ -114,7 +114,7 @@ class LatexWriter(object):
             assert heading.tag=='head'
             toc_num=heading.attrib.get('n',None)
             def _recurse_wrap(e2):
-                if e2.get('rend',None)=='hanging': return r'\begin{vismHanging}'+self._recurse(e2)+'\end{vismHanging}'
+                if e2.get('rend',None)=='hanging': return r'\begin{vismHanging}'+self._recurse(e2)+r'\end{vismHanging}'
                 else: return self._recurse(e2)
             if level==1: # part
                 ret='\n'+ind
@@ -154,7 +154,7 @@ class LatexWriter(object):
             elif e.attrib['type']=='bib':
                 ret=r'\textbf{\cite{'+e.attrib['target']+'}'
                 if loc:=e.get('loc',None):
-                    if href:=e.get('href',None): ret+=' \href{'+self._rep(href)+'}{'+loc+'}'
+                    if href:=e.get('href',None): ret+=' \\href{'+self._rep(href)+'}{'+loc+'}'
                     else: ret+=loc
                 return ret+'}'
             else: raise ValueError('Unknown value of type in <ptr type="{e.attrib["type"]}">, line {e.sourceline}')
@@ -162,7 +162,7 @@ class LatexWriter(object):
             assert False
         elif e.tag in ('index','glossary'):
             title,subtitle=self._rep(e.attrib['title']),self._rep(e.attrib.get('subtitle',None))
-            ret='\\chapter['+title+']{'+title+'\\* {\large '+subtitle+'}}'
+            ret='\\chapter['+title+']{'+title+'\\* {\\large '+subtitle+'}}'
             if ii:=e.findall('introductory'):
                 assert len(ii)==1
                 ret+=self._recurse(ii[0])
@@ -186,7 +186,7 @@ class LatexWriter(object):
                 latex='\\begin{tblr}{colspec={Q[15em]Q[15em]}}\n'+tbody+'\\end{tblr}'
             elif layout_type=='consciousness':
                 plastex='\\begin{tabular}{rrl}\n'+tbody+'\\end{tabular}'
-                latex='\\begin{longtblr}[theme=vismNaked,presep=\smallskipamount,postsep=\smallskipamount]{colspec={X[1,r]Q[4em,r]X[1,l]},rowsep=0pt}\n'+tbody+'\\end{longtblr}'
+                latex='\\begin{longtblr}[theme=vismNaked,presep=\\smallskipamount,postsep=\\smallskipamount]{colspec={X[1,r]Q[4em,r]X[1,l]},rowsep=0pt}\n'+tbody+'\\end{longtblr}'
             else: raise InvalidValue(f'latex_theme must be one of: ceylon, commentaries, consciousness (not {latex_theme}, XML line {e.sourceline}).')
             return textwrap.indent(f'\n\n\\ifplastex\n{plastex}\n\\else\n{latex}\\fi\n\\noindent\n',ind)+ind
         elif e.tag=='list':
@@ -361,7 +361,7 @@ class SphinxWriter(object):
                 return self.title(heading,prefix=e.attrib.get('n',None),prefixSep=' ',level=level)+'\n\n'+self.recurse(e)
             else:
                 dd={7:'**',8:'*'}[level]
-                return '\n\n'+dd+'['+self.recurse(heading)+']'+dd+'\ '+'\n\n'+self.recurse(e)
+                return '\n\n'+dd+'['+self.recurse(heading)+']'+dd+'\\ '+'\n\n'+self.recurse(e)
         elif e.tag=='p':
             if not self.editorial_titles and e.get('type',None)=='editorial_title': return ''
             if anchor:=e.attrib.get('id',None):
@@ -370,7 +370,7 @@ class SphinxWriter(object):
                 pre=f'\n\n.. _{anchor}:\n\n:ref:`§{e.attrib["n"]} <{anchor}>` '
                 return pre+self.recurse(e)
             else:
-                pre=('\n\n' if ord>0 else '\n\n')
+                pre=('\n\n' if ord>0 else '\n\n') ## ??
                 tail=self.recurse(e)
                 # fix what looks like start of enumeration but is not
                 if len(e)>0 and e[0].tag=='span' and re.match('\([0-9]+\) |[0-9]+\. |[a-zA-Z]\. |\([a-zA-Z]\) ',tail): tail='\\'+tail
@@ -513,6 +513,284 @@ class SphinxWriter(object):
         raise RuntimeError(f'Unhandled tag <{e.tag}>')
 
 
+
+
+class SphinxWriterMyST(object):
+    def __init__(self,outdir,vimm=False,chapters_arabic=False):
+        self.footnotes={}
+        self.outdir=outdir
+        self.chapter=0
+        self.part=0
+        self.matter=None
+        self.editorial_titles=False
+        self.vimm=vimm
+        self.toctreeLevel=0
+        self.rstExt='.md'
+        self.topFiles=[]
+        self.chapters_arabic=chapters_arabic
+    def _flush(self):
+        if not self.footnotes: return ''
+        ret='\n\n:::{rubric} Footnotes\n\n:::\n\n'
+        for k,vv in self.footnotes.items(): ret+=f'\n({self.chapter_anchor}.n{k})=\n\n[^{k}]:'+'\n    '.join([v for v in vv.split('\n')])+'\n'
+        self.footnotes={}
+        return ret
+    def _rep(self,t): return t.replace('*','∗')
+    def recurse(self,e):
+        if e.text is not None and len(e)==0: return self._rep(e.text)
+        return ''.join([self.write(e2,ord=ord) for ord,e2 in enumerate(e)])
+    #def indent_except_first(self,t):
+    #    i='    '
+    #    t2=textwrap.indent(t,i)
+    #    assert len(t2.split('\n')[0])>len(i)
+    #    return t2[len(i):]
+    def indent_all(self,t):
+        return textwrap.indent(t,2*' ')
+    def title(self,e,level,anchor=None,prefix=None,prefixSep='. '):
+        ret='\n\n'
+        if anchor: ret+=f'({anchor})=\n\n'
+        t=(e if isinstance(e,str) else self.recurse(e))
+        if prefix: t=prefix+prefixSep+t
+        return f'{ret}{level*'#'} {t}'
+    def enclose(self,t,c):
+        if t.strip()=='': return ' '
+        ret=t
+        if ret.endswith(' '): ret=ret.rstrip()+c+' '
+        else: ret=ret+c  # +'\\ '
+        if ret.startswith(' '): ret=' '+c+ret.lstrip()
+        else: ret=c+ret
+        return ret
+    def writeIndex(self,title):
+        f=f'{self.outdir}/index.md'
+        print(f'→ {f}')
+        idx=open(f,'w')
+        idx.write(f'# {title}\n\n:::{{toctree}}\n:maxdepth: 6\n\n')
+        idx.write('\n'.join(self.topFiles)+'\n')
+        idx.write(':::\n')
+    def writeRst(self,*,e,fname,title,num=None,anchor=None,prefix=None,subTree=True):
+        f2=f'{self.outdir}/{fname}'
+        currOut=open(f2,'w')
+        print('  '*self.toctreeLevel+f'→ {f2}')
+        currOut.write(self.title(title,level=1,anchor=anchor,prefix=prefix)+'\n\n')
+        if self.toctreeLevel==0: self.topFiles.append(fname)
+        if subTree:
+            self.toctreeLevel+=1
+            currOut.write(':::{toctree}\n:maxdepth: 6\n\n')
+            for sub in e:
+                currOut.write('\n'+(subF:=self.write(sub)))
+            currOut.write('\n:::\n')
+            self.toctreeLevel-=1
+        else:
+            for sub in e:
+                currOut.write(self.write(sub))
+        currOut.write(self._flush())
+        currOut.close()
+
+    def write(self,e,ord=-1):
+        def _nobraces(t):
+            return t.replace('[','').replace(']','')
+        if isinstance(e,etree._Comment): return''
+        if e.tag=='TEI': return self.recurse(e)
+        elif e.tag=='teiHeader': return ''
+        elif e.tag=='text':
+            for e2 in e: self.write(e2)
+            return ''
+        elif e.tag in ('front','main','back'):
+            self.matter={'front':-1,'main':0,'back':1}[e.tag]
+            self.chapter=0
+            if e.tag in ('front',):
+                self.writeRst(e=e,fname=e.tag+self.rstExt,title={'front':'Front'}[e.tag],subTree=True)
+            else:
+                for p in e: self.write(p)
+            return None
+        elif e.tag.startswith('head'): return ''
+        elif e.tag.startswith('div'):
+            level,tail=int((m:=re.match('(?P<tail>(?P<level>[0-9]+)-.*)',e.attrib['type'])).group('level')),m.group('tail')
+            anchor=e.get('id',None)
+            heading=e[0]
+            assert heading.tag.startswith('head')
+            toc_num=heading.attrib.get('n',None)
+            if toc_num and anchor: raise RuntimeError('{e.sourceline}: both {e.attrib["id"]=} and {heading.attrib["n"]=} are defined.')
+            if toc_num: anchor=toc_num
+            assert 0<level<9
+            import roman
+            if level==1: # part
+                self.part+=1
+                R=roman.toRoman(self.part)
+                self.writeRst(e=e,fname=f'part-{R}{self.rstExt}',title=self.recurse(heading),anchor=f'p{R}',num=self.part,prefix=f'Part {R}',subTree=True)
+                return None
+            elif level==2:
+                self.chapter+=1
+                if self.matter==-1:  f=f'front-{"_ABCDEFGHIJKLMN"[self.chapter]}'
+                elif self.matter==0: f=f'ch-{self.chapter:02d}'
+                elif self.matter==1: f=f'back-{"_ABCDEFGHI"[self.chapter]}'
+                f+=self.rstExt
+                if anchor is None:
+                    anchor=((str(self.chapter) if self.chapters_arabic else roman.toRoman(self.chapter)) if self.matter==0 else None)
+                    prefix=anchor
+                else:
+                    # this is to handle cases when chapter has an ID (e.g. in mctb2 a chapter in frontmatter), abut it should not be shown as prefix
+                    prefix=None
+                self.chapter_anchor=anchor
+                self.writeRst(e=e,fname=f,title=self.recurse(heading),anchor=anchor,prefix=prefix,subTree=False)
+                return f
+            elif 3<=level<=6:
+                return self.title(heading,prefix=e.attrib.get('n',None),prefixSep=' ',level=level-1)+'\n\n'+self.recurse(e)
+            else:
+                dd={7:'**',8:'*'}[level]
+                return '\n\n'+dd+'['+self.recurse(heading)+']'+dd+'\n\n'+self.recurse(e)
+        elif e.tag=='p':
+            if not self.editorial_titles and e.get('type',None)=='editorial_title': return ''
+            if anchor:=e.attrib.get('id',None):
+                # <https://github.com/eudoxos/vism/issues/new?title=issue%20at%20{anchor}&body=({vismCommitTimestampQuery})>
+                pre=f'\n\n({anchor})=\n\n{{ref}}`§{e.attrib["n"]} <{anchor}>` '
+                return pre+self.recurse(e)
+            else:
+                pre=('\n\n' if ord>0 else '\n\n') ## ??
+                tail=self.recurse(e)
+                # fix what looks like start of enumeration but is not
+                # if len(e)>0 and e[0].tag=='span' and re.match('\([0-9]+\) |[0-9]+\. |[a-zA-Z]\. |\([a-zA-Z]\) ',tail): tail='\\'+tail
+                return pre+tail
+        elif e.tag=='em':
+            assert len(e)==0
+            if e.text is None: return ''
+            return self.enclose(self._rep(e.text),'*')
+        elif e.tag=='span':
+            assert len(e)==0
+            if e.text is None: return ''
+            tx=self._rep(e.text)
+            if (fam:=e.attrib.get('rend',None)) is None: return tx
+            elif fam=='italic': return self.enclose(tx,'*')
+            elif fam=='bold': return self.enclose(tx,'**')
+            elif fam=='smallcaps': return self.enclose(tx,'``')
+            elif fam=='bold-italic': return self.enclose(tx,'``')
+            else: raise RuntimeError(f'Unrecognized family {fam}')
+        elif e.tag=='note':
+            if e.get('place',None)=='foot':
+                anchor=e.attrib.get("id",str(len(self.footnotes)+1))
+                if self.vimm:
+                    if len(self.footnotes)==0: mark="1"
+                    else: mark=str(int(list(self.footnotes.keys())[-1])+1)
+                else:
+                    mark=e.attrib['n']
+                    if 'reference_existing_footnote' in e.attrib:
+                        return f' [^{mark}]'
+                self.footnotes[mark]=self.recurse(e)
+                return f' [^{mark}]'
+            elif e.get('type',None)=='TODO':
+                return f'**TODO: {e.text}**'
+            raise RuntimeError(f'Unhandled <note>, line {e.sourceline}')
+        elif e.tag=='lg':
+            return '\n:::{line-block}\n'+self.recurse(e)+'\n:::\n'
+        elif e.tag=='l':
+            #isLast=(e.getnext() is None)
+            #return ('\n\n' if ord==0 else '')+'\n| '+self.recurse(e)+('\n' if isLast else '')
+            return '\n'+self.recurse(e)
+        elif e.tag=='pb':
+            assert e.attrib['ed'] in ('BPS2011','BPS1995','PTS')
+            anchorName=f'page-{e.attrib["ed"]}-{e.attrib["n"]}'
+            anchor=f'{{anchor}}`{anchorName}`'
+            if e.attrib['ed'] in ('BPS2011','BPS1995'): return anchor+f' [{{ref}}`{e.attrib["n"]} <{anchorName}>`/{e.attrib["pdf_page"]}]{{.pb-tag-BPS}} '
+            elif e.attrib['ed']=='PTS': return anchor+f' [{{ref}}`{e.attrib["n"]} <{anchorName}>`]{{.pb-tag-PTS}} '
+            assert False
+        elif e.tag=='anchor':
+            return f'\n\n({e.get("id")})=\n\n'
+        elif e.tag=='ptr':
+            if e.attrib['type'] in ('vism','vimm','internal'):
+                return f'{{ref}}`{e.text.replace("[PAGE]","")} <{e.attrib["target"]}>`'
+            elif e.attrib['type']=='bib':
+                ret=f'{{term}}`{e.attrib["target"]}`'
+                if loc:=e.get('loc',None):
+                    if href:=e.get('href',None): ret+=f'[{loc.strip()}]({href})'
+                    else: ret+=' '+self.enclose(loc,'*')
+                #+(self.enclose(e.attrib["loc"],'*') if 'loc' in e.attrib else '')+' '
+                return ret
+            assert False
+        elif e.tag in ('index','glossary'):
+            title,subtitle=e.attrib['title'],e.attrib['subtitle']
+            if e.tag=='index':      out,ret='index_',self.title(e=f'{title} ({subtitle})',level=1,anchor='index')
+            elif e.tag=='glossary': out,ret='glossary',self.title(e=f'{title} ({subtitle})',level=1,anchor='glossary')
+            if ii:=e.findall('introductory'):
+                assert len(ii)==1
+                ret+='\n\n'+self.recurse(ii[0])
+            ret+='\n\n{.glossary}\n'
+            ret+=self.recurse(e)
+            ret+='\n\n'
+            f0=f'{out}{self.rstExt}'
+            self.topFiles.append(f0)
+            f=f'{self.outdir}/{f0}'
+            print(f'→ {f}')
+            open(f,'w').write(ret)
+            return
+        elif e.tag=='introductory': return ''
+        elif e.tag=='entry':
+            title=e.attrib["title"].replace("*","\\*")
+            return f'\n{title}\n: '+self.recurse(e)
+        elif e.tag=='IGNORE': return ''
+        elif e.tag=='table':
+            layout_type=e.attrib['rend']
+            ret=f'\n\n:::{{list-table}}\n'
+            if layout_type=='commentaries': ret+=':header-rows: 1\n\n'
+            elif layout_type=='ceylon': ret+=':header-rows: 1\n:widths: 30 20 40\n\n'
+            elif layout_type=='consciousness': ret+=':width: 80%\n:widths: 4 1 4\n\n'
+            maxCol=max([len(tr) for tr in e])
+            for irow,tr in enumerate(e):
+                assert tr.tag=='row'
+                for icol,td in enumerate(tr):
+                    assert td.tag=='cell'
+                    cont=self.recurse(td)
+                    # escape (xiv) which would be turned into 'xiv.' (as enumeration start)
+                    if icol==1 and len(cont)>0 and cont[0]=='(': cont='\\'+cont
+                    ret+='\n'+('*' if icol==0 else ' ')+' - '+cont.strip()
+                for icol in range(len(tr),maxCol):
+                    ret+='\n'+('*' if icol==0 else ' ')+' - '
+            return ret+'\n\n:::\n\n'
+        elif e.tag=='list':
+            if e.attrib['type']=='numbered':
+                assert e.attrib['type']=='numbered'
+                import roman
+                iOff=int(e.get('start','1'))
+                mystStyle={
+                        '1.':'decimal',
+                        '1)':'decimal',
+                        'I.':'upper-roman',
+                        'i.':'lower-roman',
+                        '(i)':'lower-roman',
+                        '(a)':'lower-alpha',
+                        'a.':'lower-alpha',
+                    }[e.get('subtype','1.')]
+                ret=f'\n{{style={mystStyle}}}\n'
+                for i,li in enumerate(e):
+                    label=f'{i+iOff}.'
+                    ret+=f'\n{label} '+self.indent_all(self.recurse(li))
+                ret+='\n\n'
+                return ret
+            elif e.attrib['type']=='bulleted':
+                ret='\n'
+                for i,li in enumerate(e):
+                    ret+=f'\n\n* '+self.indent_all(self.recurse(li))
+                ret+='\n\n'
+                return ret
+            elif e.attrib['type']=='gloss':
+                ret='\n'
+                for i in range(0,len(e)//2):
+                    label,item=e[2*i],e[2*i+1]
+                    ret+=f'\n{self.recurse(label)}\n:  {self.indent_all(self.recurse(item))}'
+                ret+='\n\n'
+                return ret
+            else: raise ValueError(f'Unhandled list type: {e.attrib["type"]}')
+        elif e.tag=='bibliography':
+            ret='\n\n{.glossary}'
+            for bi in e:
+                if bi.tag=='bibentry':
+                    ret+=f'\n{bi.get("abbrev")}\n: '+self.recurse(bi).replace('\n','\n  ')+'\n'
+                    # .. [{bi.get("abbrev").replace(".","").replace(" ","")}] '+self.recurse(bi).replace('\n','\n     ')
+                else: assert False
+            return ret
+        elif e.tag=='ref':
+            return f'[{self.recurse(e)}]({e.attrib["target"]})'
+        elif e.tag=='graphic':
+            return f'\n\n:::{{image}} {e.attrib["url"]}\n:width: 80%\n:::\n\n'
+        raise RuntimeError(f'Unhandled tag <{e.tag}>')
 
 
 
