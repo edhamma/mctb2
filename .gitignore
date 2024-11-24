@@ -1,3 +1,5 @@
+*~
 build
 .ipynb_checkpoints
 www.mctb.org
+__pycache__
