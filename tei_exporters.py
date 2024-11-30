@@ -189,7 +189,7 @@ class LatexWriter(object):
                 latex='\\begin{longtblr}[theme=vismNaked,presep=\\smallskipamount,postsep=\\smallskipamount]{colspec={X[1,r]Q[4em,r]X[1,l]},rowsep=0pt}\n'+tbody+'\\end{longtblr}'
             elif layout_type=='mctb2-nana':
                 plastex='\\begin{tabular}{lll}\n'+tbody+'\\end{tabular}'
-                latex='\\begin{longtblr}[theme=vismNaked,presep=\\smallskipamount,postsep=\\smallskipamount]{colspec={X[1,l]X[2,l]X[1,l]},rowsep=0pt}\n'+tbody+'\\end{longtblr}'
+                latex='\\begin{longtblr}[theme=vismNaked,presep=\\smallskipamount,postsep=\\smallskipamount]{colspec={X[3,l]X[1,l]X[1,l]},rowsep=0pt}\n'+tbody+'\\end{longtblr}'
             elif layout_type=='mctb2-vipassana-jhana':
                 plastex='\\begin{tabular}{ll}\n'+tbody+'\\end{tabular}'
                 latex='\\begin{longtblr}[theme=vismNaked,presep=\\smallskipamount,postsep=\\smallskipamount]{colspec={X[1,l]X[2,l]},rowsep=0pt}\n'+tbody+'\\end{longtblr}'
@@ -739,7 +739,7 @@ class SphinxWriterMyST(object):
             elif layout_type=='ceylon': ret+=':header-rows: 1\n:widths: 30 20 40\n\n'
             elif layout_type=='consciousness': ret+=':width: 80%\n:widths: 4 1 4\n\n'
             elif layout_type=='mctb2-vipassana-jhana': ret+=':header-rows: 1\n:widths: 30 70\n\n'
-            elif layout_type=='mctb2-nana': ret+=':header-rows: 0\n:widths: 30 70 30\n\n'
+            elif layout_type=='mctb2-nana': ret+=':header-rows: 0\n:widths: 60 20 20\n\n'
             else: raise RuntimeError('Unknown <table rend="{layout_type}">.')
             maxCol=max([len(tr) for tr in e])
             for irow,tr in enumerate(e):
