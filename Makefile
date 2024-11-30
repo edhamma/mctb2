@@ -23,4 +23,5 @@ mctb2:
 	#weasyprint -s html5/style.A4.css build/html5/vimm.html build/html5/vimm.weasyprint.pdf
 	#vivliostyle build --style build/html5/style.A4.css --single-doc --timeout 1200 --output build/html5/vimm.vivliostyle.pdf build/html5/vimm.html
 
-
+clean:
+	rm -rf build

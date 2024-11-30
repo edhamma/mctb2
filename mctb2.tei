@@ -4002,7 +4002,7 @@
             <span> Some of the “content-based” or psychological insights into ourselves can be interesting and helpful, but when I say “insight”, these stages with their specific perceptual shifts and upgrades are what I am talking about. The formal names of the stages of insight in order are:</span>
           </p>
           <p/>
-          <table>
+          <table rend="mctb2-nana">
             <row>
               <cell>1.Knowledge of Mind and Body (ñ1, M&amp;B)</cell>
               <cell>The pre-vipassana stages</cell>
@@ -5911,7 +5911,7 @@
             </p>
             <p/>
           </div>
-          <table>
+          <table rend="mctb2-vipassana-jhana">
             <row>
               <cell>
                 <emph>Vipassana Jhana</emph>

@@ -21,7 +21,7 @@ if 1:
             #if s=='1': l.attrib['subtype']='1)'
             # l.attrib['subtype']=s+'.'
     for n in mctbTEI.findall('.//note'): n.attrib['n']='X'
-    for t in mctbTEI.findall('.//table'): t.attrib['rend']='ceylon'
+    # for t in mctbTEI.findall('.//table'): t.attrib['rend']='ceylon'
     print('MCTB2')
     open('build/latex/mctb2-body.tex','w').write(latexWriter.write(mctbTEI))
 
