@@ -1,0 +1,28 @@
+\input{vism-common.tex}
+
+\ifplastex\else
+	\usepackage{newunicodechar}
+	\usepackage[weather]{ifsym}
+	\newunicodechar{⚡}{\Lightning}
+\fi
+
+\def\vismAssertFootnoteCounter#1{\relax}
+\begin{document}
+	\title{Mastering the Core Teachings of the Buddha}
+	\date{An Unusually Hardcore Dharma Book \\ Revised and Expanded Edition \\ (ver. \vismCommitHref, compiled \today; \\ see \url{https://edhamma.github.io/mctb2} for various formats)}
+	\ifplastex
+		\author{by the Arahant \\ Daniel M. Ingram}
+	\else
+		\author{by the Arahant \\ Daniel M. Ingram}
+	\fi
+	\maketitle
+
+	\frontmatter
+		\renewcommand{\thechapter}{\arabic{chapter}}
+
+		\bgroup
+			\ifplastex\else\renewcommand{\baselinestretch}{0.2}\normalsize\fi
+			\tableofcontents
+		\egroup
+		\input{mctb2-body.tex}
+\end{document}

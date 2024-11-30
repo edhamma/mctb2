@@ -1,0 +1,209 @@
+\contentsline {part}{Front}{i}{Doc-Start}%
+\contentsline {chapter}{\numberline {1}Credits}{vii}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Preface to the Second Edition}{ix}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Dedication}{xi}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Foreword and Warning}{xiii}{chapter.5}%
+\contentsline {part}{Part I\hspace {1em}The Fundamentals}{1}{part.6}%
+\contentsline {chapter}{\numberline {1}Introduction to Part I}{3}{chapter.7}%
+\contentsline {chapter}{\numberline {2}Morality, The First and Last Training}{5}{chapter.8}%
+\contentsline {chapter}{\numberline {3}Concentration, The Second Training}{11}{chapter.9}%
+\contentsline {chapter}{\numberline {4}Wisdom, The Third Training}{15}{chapter.10}%
+\contentsline {chapter}{\numberline {5}The Three Characteristics}{19}{chapter.11}%
+\contentsline {section}{\numberline {1}Impermanence}{19}{section.12}%
+\contentsline {section}{\numberline {2}Dissatisfactoriness}{25}{section.13}%
+\contentsline {section}{\numberline {3}No-Self}{27}{section.16}%
+\contentsline {chapter}{\numberline {6}The Five Spiritual Faculties}{33}{chapter.17}%
+\contentsline {section}{\numberline {1}Faith and Wisdom}{33}{section.19}%
+\contentsline {section}{\numberline {2}Energy and Concentration}{34}{section.20}%
+\contentsline {section}{\numberline {3}Mindfulness}{35}{section.21}%
+\contentsline {chapter}{\numberline {7}The Seven Factors of Awakening}{37}{chapter.23}%
+\contentsline {section}{\numberline {1}Mindfulness}{37}{section.31}%
+\contentsline {section}{\numberline {2}Investigation}{39}{section.32}%
+\contentsline {section}{\numberline {3}Energy}{42}{section.34}%
+\contentsline {section}{\numberline {4}Rapture}{43}{section.35}%
+\contentsline {section}{\numberline {5}Tranquility}{44}{section.36}%
+\contentsline {section}{\numberline {6}Concentration}{44}{section.37}%
+\contentsline {section}{\numberline {7}Equanimity}{45}{section.38}%
+\contentsline {chapter}{\numberline {8}The Three Trainings Revisited}{49}{chapter.40}%
+\contentsline {section}{\numberline {1}Happiness}{49}{section.41}%
+\contentsline {section}{\numberline {2}Renunciation}{50}{section.42}%
+\contentsline {section}{\numberline {3}Suffering}{51}{section.43}%
+\contentsline {section}{\numberline {4}Awakening}{52}{section.44}%
+\contentsline {section}{\numberline {5}The Play}{52}{section.45}%
+\contentsline {chapter}{\numberline {9}The Four Noble Truths}{55}{chapter.47}%
+\contentsline {section}{\numberline {1}Truth Number One: There Is Suffering}{55}{section.52}%
+\contentsline {section}{\numberline {2}Truth Number Two: There Is the Cause of Suffering}{56}{section.53}%
+\contentsline {section}{\numberline {3}Truth Number Three: There Is the End of Suffering}{58}{section.55}%
+\contentsline {section}{\numberline {4}Truth Number Four: The Noble Eightfold Path}{58}{section.56}%
+\contentsline {chapter}{\numberline {10}Objects for Insight Practice}{61}{chapter.65}%
+\contentsline {section}{\numberline {1}When, Where, and For How Long?}{63}{section.66}%
+\contentsline {chapter}{\numberline {11}On Teachers}{65}{chapter.67}%
+\contentsline {chapter}{\numberline {12}Daily Life and Retreats}{73}{chapter.69}%
+\contentsline {chapter}{\numberline {13}A Few Odds and Ends About Retreats}{75}{chapter.70}%
+\contentsline {chapter}{\numberline {14}Post-Retreat Advice}{81}{chapter.78}%
+\contentsline {chapter}{\numberline {15}Postures}{83}{chapter.79}%
+\contentsline {chapter}{\numberline {16}Resolve}{85}{chapter.80}%
+\contentsline {part}{Part II\hspace {1em}Light and Shadows}{87}{part.81}%
+\contentsline {chapter}{\numberline {17}Introduction to Parts Two through Five}{89}{chapter.82}%
+\contentsline {chapter}{\numberline {18}Buddhism versus The Buddha ⚡}{93}{chapter.83}%
+\contentsline {chapter}{\numberline {19}Content and Ultimate Reality ⚡}{97}{chapter.84}%
+\contentsline {chapter}{\numberline {20}What Went Wrong ⚡}{101}{chapter.85}%
+\contentsline {chapter}{\numberline {21}A Clear Goal}{107}{chapter.86}%
+\contentsline {chapter}{\numberline {22}Harnessing the Energy of the Defilements}{113}{chapter.89}%
+\contentsline {chapter}{\numberline {23}Right Thought and the Augean Stables}{117}{chapter.90}%
+\contentsline {chapter}{\numberline {24}From Content to Insight}{119}{chapter.92}%
+\contentsline {part}{Part III\hspace {1em}The Samatha Jhanas}{123}{part.93}%
+\contentsline {chapter}{\numberline {25}Introduction to Part Three}{125}{chapter.94}%
+\contentsline {chapter}{\numberline {26}The Wide World of Jhana}{127}{chapter.95}%
+\contentsline {section}{\numberline {1}The First Jhana}{131}{section.97}%
+\contentsline {section}{\numberline {2}The Second Jhana}{132}{section.98}%
+\contentsline {section}{\numberline {3}The Third Jhana}{132}{section.99}%
+\contentsline {section}{\numberline {4}The Fourth Jhana}{134}{section.100}%
+\contentsline {chapter}{\numberline {27}The Concentration States (Shamatha Jhanas)}{135}{chapter.101}%
+\contentsline {section}{\numberline {1}The First Shamatha Jhana}{137}{section.102}%
+\contentsline {section}{\numberline {2}The Second Shamatha Jhana}{141}{section.109}%
+\contentsline {section}{\numberline {3}The Third Shamatha Jhana}{142}{section.113}%
+\contentsline {section}{\numberline {4}The Fourth Shamatha Jhana}{144}{section.118}%
+\contentsline {chapter}{\numberline {28}The Formless Realms}{147}{chapter.125}%
+\contentsline {section}{\numberline {1}The Fifth Jhana, Boundless Space}{147}{section.126}%
+\contentsline {section}{\numberline {2}The Sixth Jhana, Boundless Consciousness}{149}{section.132}%
+\contentsline {section}{\numberline {3}The Seventh Jhana, Nothingness}{150}{section.137}%
+\contentsline {section}{\numberline {4}The Eighth Jhana, Neither Perception Nor Non-Perception}{152}{section.143}%
+\contentsline {chapter}{\numberline {29}Kasina Practice}{155}{chapter.145}%
+\contentsline {part}{Part IV\hspace {1em}Insight}{163}{part.147}%
+\contentsline {chapter}{\numberline {30}The Progress of Insight}{165}{chapter.148}%
+\contentsline {section}{\numberline {1}1. Mind and Body}{169}{section.155}%
+\contentsline {section}{\numberline {2}2. Cause and Effect}{169}{section.156}%
+\contentsline {section}{\numberline {3}3. The Three Characteristics}{170}{section.157}%
+\contentsline {section}{\numberline {4}4. The Arising and Passing Away}{172}{section.158}%
+\contentsline {section}{\numberline {5}5. Dissolution, Entrance to the Dark Night}{178}{section.161}%
+\contentsline {section}{\numberline {6}6. Fear}{186}{section.162}%
+\contentsline {section}{\numberline {7}7. Misery}{187}{section.163}%
+\contentsline {section}{\numberline {8}8. Disgust}{187}{section.164}%
+\contentsline {section}{\numberline {9}9. Desire for Deliverance}{188}{section.165}%
+\contentsline {section}{\numberline {10}10. Re-observation}{189}{section.166}%
+\contentsline {section}{\numberline {11}11. Equanimity}{199}{section.168}%
+\contentsline {section}{\numberline {12}12. Conformity}{208}{section.180}%
+\contentsline {section}{\numberline {13}13. Change of Lineage}{210}{section.191}%
+\contentsline {section}{\numberline {14}14. Path}{210}{section.192}%
+\contentsline {section}{\numberline {15}15. Fruition}{211}{section.194}%
+\contentsline {chapter}{\numberline {31}The Three Doors}{213}{chapter.196}%
+\contentsline {chapter}{\numberline {32}“What Was That?”}{217}{chapter.198}%
+\contentsline {chapter}{\numberline {33}Review}{223}{chapter.199}%
+\contentsline {chapter}{\numberline {34}The Vipassana Jhanas}{227}{chapter.201}%
+\contentsline {section}{\numberline {1}Bill Hamilton’s Model}{228}{section.202}%
+\contentsline {section}{\numberline {2}Fractals}{232}{section.205}%
+\contentsline {section}{\numberline {3}U Pandita’s Model}{238}{section.206}%
+\contentsline {section}{\numberline {4}One More Model}{239}{section.207}%
+\contentsline {chapter}{\numberline {35}How the Maps Help}{241}{chapter.209}%
+\contentsline {chapter}{\numberline {36}Beyond First Path (“What Next?”)}{247}{chapter.210}%
+\contentsline {part}{Part V\hspace {1em}Awakening}{253}{part.211}%
+\contentsline {chapter}{\numberline {37}Models of the Stages of Awakening ⚡}{255}{chapter.212}%
+\contentsline {section}{\numberline {1}General Problems with Current Models}{257}{section.213}%
+\contentsline {section}{\numberline {2}Models that are Mostly Unhelpful}{258}{section.215}%
+\contentsline {section}{\numberline {3}The Non-Duality Models}{263}{section.221}%
+\contentsline {section}{\numberline {4}The Sudden Schools of Awakening}{264}{section.223}%
+\contentsline {section}{\numberline {5}The Direct Perception Models}{265}{section.224}%
+\contentsline {section}{\numberline {6}Time and Space Models}{266}{section.225}%
+\contentsline {section}{\numberline {7}The Fundamental Perception Models}{266}{section.226}%
+\contentsline {section}{\numberline {8}The Specific Perception Models}{267}{section.227}%
+\contentsline {section}{\numberline {9}The Emotional Models}{268}{section.228}%
+\contentsline {section}{\numberline {10}The Theravada Four Path Model}{270}{section.231}%
+\contentsline {section}{\numberline {11}A Revised Four Path Model}{274}{section.236}%
+\contentsline {section}{\numberline {12}The Bodhisattva Bhumi Model}{279}{section.257}%
+\contentsline {section}{\numberline {13}The Mahayana Five Path Model}{281}{section.258}%
+\contentsline {section}{\numberline {14}The Vajrayana Models}{281}{section.259}%
+\contentsline {section}{\numberline {15}The Concentration Models}{282}{section.260}%
+\contentsline {section}{\numberline {16}\emph {Nirodha Samapatti}}{284}{section.261}%
+\contentsline {section}{\numberline {17}Back to the Vajrayana Story}{286}{section.262}%
+\contentsline {section}{\numberline {18}The Simple Model}{287}{section.263}%
+\contentsline {section}{\numberline {19}The Action Models}{289}{section.268}%
+\contentsline {section}{\numberline {20}The Perfect Speech Models}{291}{section.269}%
+\contentsline {section}{\numberline {21}The Perfect Internet Behavior Models}{291}{section.270}%
+\contentsline {section}{\numberline {22}The Powers Models}{291}{section.271}%
+\contentsline {section}{\numberline {23}The Sleep Models}{292}{section.272}%
+\contentsline {section}{\numberline {24}The Specific Knowledge Models}{293}{section.273}%
+\contentsline {section}{\numberline {25}The Psychological Models}{293}{section.274}%
+\contentsline {section}{\numberline {26}The No-Thought Models}{295}{section.282}%
+\contentsline {section}{\numberline {27}The God Models}{298}{section.293}%
+\contentsline {section}{\numberline {28}The Unity Models}{299}{section.294}%
+\contentsline {section}{\numberline {29}The True Self Models}{299}{section.295}%
+\contentsline {section}{\numberline {30}The Physical Models}{302}{section.297}%
+\contentsline {section}{\numberline {31}The Biological Models}{303}{section.298}%
+\contentsline {section}{\numberline {32}The Radiance Models}{304}{section.304}%
+\contentsline {section}{\numberline {33}The Karma Models}{306}{section.305}%
+\contentsline {section}{\numberline {34}The Perpetual Bliss Models}{307}{section.308}%
+\contentsline {section}{\numberline {35}The Three Kayas}{307}{section.309}%
+\contentsline {section}{\numberline {36}The Immortality Models}{310}{section.311}%
+\contentsline {section}{\numberline {37}The Transcendence Models}{311}{section.312}%
+\contentsline {section}{\numberline {38}The Extinction Models}{312}{section.313}%
+\contentsline {section}{\numberline {39}The Love Models}{312}{section.314}%
+\contentsline {section}{\numberline {40}The Equanimity Models}{313}{section.316}%
+\contentsline {section}{\numberline {41}The No-Preference Models}{314}{section.318}%
+\contentsline {section}{\numberline {42}The Special Models}{314}{section.319}%
+\contentsline {section}{\numberline {43}The Social Models}{318}{section.322}%
+\contentsline {section}{\numberline {44}The Ultimate Reality versus Unreality Models}{319}{section.323}%
+\contentsline {section}{\numberline {45}The Meaning Models}{320}{section.324}%
+\contentsline {section}{\numberline {46}The Three Yanas}{322}{section.325}%
+\contentsline {section}{\numberline {47}Ditching our “Stuff” versus Ditching the Split}{324}{section.329}%
+\contentsline {section}{\numberline {48}The “Nothing To Do” and “You Are Already There” Schools}{325}{section.330}%
+\contentsline {section}{\numberline {49}Depths of Realization and Integration}{327}{section.331}%
+\contentsline {section}{\numberline {50}Archetypes, Roles, Inspiration, and Becoming}{328}{section.332}%
+\contentsline {section}{\numberline {51}Dependent Origination}{328}{section.333}%
+\contentsline {section}{\numberline {52}Final Points}{329}{section.334}%
+\contentsline {section}{\numberline {53}Towards Contemporary Models}{330}{section.335}%
+\contentsline {chapter}{\numberline {38}Integration}{333}{chapter.336}%
+\contentsline {chapter}{\numberline {39}It Is Possible!}{337}{chapter.338}%
+\contentsline {chapter}{\numberline {40}More on the “Mushroom Factor” ⚡}{339}{chapter.339}%
+\contentsline {chapter}{\numberline {41}So, Who the Heck is Daniel M. Ingram?}{347}{chapter.342}%
+\contentsline {part}{Part VI\hspace {1em}My Spiritual Quest}{351}{part.343}%
+\contentsline {chapter}{\numberline {42}Backstory}{353}{chapter.344}%
+\contentsline {chapter}{\numberline {43}The Early Years}{357}{chapter.345}%
+\contentsline {chapter}{\numberline {44}Bodysurfing}{361}{chapter.346}%
+\contentsline {chapter}{\numberline {45}College and Pre-Buddhist Exploration}{363}{chapter.347}%
+\contentsline {chapter}{\numberline {46}The Middle Years}{365}{chapter.348}%
+\contentsline {chapter}{\numberline {47}Thank U, India}{369}{chapter.349}%
+\contentsline {chapter}{\numberline {48}The First Bodh Gaya Retreat}{375}{chapter.350}%
+\contentsline {chapter}{\numberline {49}The First MBMC Retreat}{377}{chapter.352}%
+\contentsline {chapter}{\numberline {50}The Dark Night Gets Ugly}{381}{chapter.354}%
+\contentsline {chapter}{\numberline {51}The Second Bodh Gaya Retreat}{383}{chapter.355}%
+\contentsline {chapter}{\numberline {52}The Great Stream Enterer}{387}{chapter.357}%
+\contentsline {chapter}{\numberline {53}Dharma Power, Dharma Poison}{389}{chapter.358}%
+\contentsline {chapter}{\numberline {54}The Middle Paths}{391}{chapter.359}%
+\contentsline {section}{\numberline {1}Slam-Shifting Ñanas and Jhanas}{391}{section.360}%
+\contentsline {section}{\numberline {2}Luminosity}{395}{section.362}%
+\contentsline {section}{\numberline {3}Nirodha Samapatti}{396}{section.364}%
+\contentsline {chapter}{\numberline {55}Map Failure}{399}{chapter.371}%
+\contentsline {chapter}{\numberline {56}Wandering}{403}{chapter.372}%
+\contentsline {chapter}{\numberline {57}Kasinas, Powers, and Retreats}{407}{chapter.373}%
+\contentsline {chapter}{\numberline {58}Introduction to the Powers}{409}{chapter.374}%
+\contentsline {chapter}{\numberline {59}Are the Powers Real?}{411}{chapter.375}%
+\contentsline {chapter}{\numberline {60}Paradigm Fluency}{413}{chapter.376}%
+\contentsline {chapter}{\numberline {61}Crazy?}{415}{chapter.377}%
+\contentsline {chapter}{\numberline {62}Those Damn Fairies …}{423}{chapter.378}%
+\contentsline {chapter}{\numberline {63}Definitions of the Powers}{425}{chapter.379}%
+\contentsline {chapter}{\numberline {64}Ethics and the Powers}{427}{chapter.380}%
+\contentsline {chapter}{\numberline {65}How to Cultivate the Powers}{431}{chapter.382}%
+\contentsline {chapter}{\numberline {66}Made Pliant and Malleable}{435}{chapter.384}%
+\contentsline {chapter}{\numberline {67}Benefits of the Powers}{437}{chapter.385}%
+\contentsline {chapter}{\numberline {68}Magick and the Brahma Viharas}{441}{chapter.386}%
+\contentsline {section}{\numberline {1}Formal Definitions}{442}{section.387}%
+\contentsline {section}{\numberline {2}The Brahma Viharas}{448}{section.426}%
+\contentsline {section}{\numberline {3}Bodhicitta as Magick}{451}{section.491}%
+\contentsline {section}{\numberline {4}Vipassana as Magick}{452}{section.492}%
+\contentsline {chapter}{\numberline {69}Bhavana Society 2001 Retreat}{453}{chapter.494}%
+\contentsline {section}{\numberline {1}Fire Kasina Practice}{453}{section.495}%
+\contentsline {section}{\numberline {2}Morality and Magick}{456}{section.496}%
+\contentsline {chapter}{\numberline {70}Around the World and Finding Home}{459}{chapter.497}%
+\contentsline {section}{\numberline {1}The Second MBMC Retreat}{460}{section.498}%
+\contentsline {section}{\numberline {2}Untangling}{461}{section.499}%
+\contentsline {section}{\numberline {3}Agencylessness}{461}{section.500}%
+\contentsline {section}{\numberline {4}Wobble and Fall}{463}{section.501}%
+\contentsline {section}{\numberline {5}\emph {Vimuttimagga}}{463}{section.502}%
+\contentsline {chapter}{\numberline {71}More Practical Tidbits}{465}{chapter.503}%
+\contentsline {section}{\numberline {1}Describing Your Practice}{465}{section.504}%
+\contentsline {section}{\numberline {2}Dependent Origination Revisited}{468}{section.505}%
+\contentsline {part}{Appendices}{473}{part*.506}%
+\contentsline {chapter}{\numberline {A}Final Wishes}{473}{chapter.507}%
+\contentsline {chapter}{\numberline {B}Last Words of Wisdom}{475}{chapter.508}%
+\contentsfinish 
