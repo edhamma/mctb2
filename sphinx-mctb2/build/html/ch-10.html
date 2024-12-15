@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>10. Objects for Insight Practice &#8212; Mastering the Core Teachings of the Buddha</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="_static/documentation_options.js?v=31dc693e"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch-10';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="11. On Teachers" href="ch-11.html" />
+    <link rel="prev" title="9. The Four Noble Truths" href="ch-09.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Mastering the Core Teachings of the Buddha</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="front.html">Front</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="front-A.html">Credits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="front-B.html">Preface to the Second Edition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="front-C.html">Dedication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="front-D.html">Foreword and Warning</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="part-I.html">Part I. The Fundamentals</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ch-01.html">1. Introduction to Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-02.html">2. Morality, The First and Last Training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-03.html">3. Concentration, The Second Training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-04.html">4. Wisdom, The Third Training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-05.html">5. The Three Characteristics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-06.html">6. The Five Spiritual Faculties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-07.html">7. The Seven Factors of Awakening</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-08.html">8. The Three Trainings Revisited</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-09.html">9. The Four Noble Truths</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">10. Objects for Insight Practice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-11.html">11. On Teachers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-12.html">12. Daily Life and Retreats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-13.html">13. A Few Odds and Ends About Retreats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-14.html">14. Post-Retreat Advice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-15.html">15. Postures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-16.html">16. Resolve</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="part-II.html">Part II. Light and Shadows</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch-17.html">17. Introduction to Parts Two through Five</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-18.html">18. Buddhism versus The Buddha ⚡</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-19.html">19. Content and Ultimate Reality ⚡</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-20.html">20. What Went Wrong ⚡</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-21.html">21. A Clear Goal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-22.html">22. Harnessing the Energy of the Defilements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-23.html">23. Right Thought and the Augean Stables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-24.html">24. From Content to Insight</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="part-III.html">Part III. The Samatha Jhanas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch-25.html">25. Introduction to Part Three</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-26.html">26. The Wide World of Jhana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-27.html">27. The Concentration States (Shamatha Jhanas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-28.html">28. The Formless Realms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-29.html">29. Kasina Practice</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="part-IV.html">Part IV. Insight</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch-30.html">30. The Progress of Insight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-31.html">31. The Three Doors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-32.html">32. “What Was That?”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-33.html">33. Review</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-34.html">34. The Vipassana Jhanas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-35.html">35. How the Maps Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-36.html">36. Beyond First Path (“What Next?”)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="part-V.html">Part V. Awakening</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch-37.html">37. Models of the Stages of Awakening ⚡</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-38.html">38. Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-39.html">39. It Is Possible!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-40.html">40. More on the “Mushroom Factor” ⚡</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-41.html">41. So, Who the Heck is Daniel M. Ingram?</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="part-VI.html">Part VI. My Spiritual Quest</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch-42.html">42. Backstory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-43.html">43. The Early Years</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-44.html">44. Bodysurfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-45.html">45. College and Pre-Buddhist Exploration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-46.html">46. The Middle Years</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-47.html">47. Thank U, India</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-48.html">48. The First Bodh Gaya Retreat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-49.html">49. The First MBMC Retreat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-50.html">50. The Dark Night Gets Ugly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-51.html">51. The Second Bodh Gaya Retreat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-52.html">52. The Great Stream Enterer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-53.html">53. Dharma Power, Dharma Poison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-54.html">54. The Middle Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-55.html">55. Map Failure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-56.html">56. Wandering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-57.html">57. Kasinas, Powers, and Retreats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-58.html">58. Introduction to the Powers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-59.html">59. Are the Powers Real?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-60.html">60. Paradigm Fluency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-61.html">61. Crazy?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-62.html">62. Those Damn Fairies …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-63.html">63. Definitions of the Powers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-64.html">64. Ethics and the Powers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-65.html">65. How to Cultivate the Powers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-66.html">66. Made Pliant and Malleable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-67.html">67. Benefits of the Powers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-68.html">68. Magick and the Brahma Viharas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-69.html">69. Bhavana Society 2001 Retreat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-70.html">70. Around the World and Finding Home</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch-71.html">71. More Practical Tidbits</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="back-A.html">Final Wishes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="back-B.html">Last Words of Wisdom</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/edhamma/mctb2" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/edhamma/mctb2/edit/main/ch-10.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/edhamma/mctb2/issues/new?title=Issue%20on%20page%20%2Fch-10.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>10. Objects for Insight Practice</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-where-and-for-how-long">When, Where, and For How Long?</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="objects-for-insight-practice">
+<span id="id1"></span><h1>10. Objects for Insight Practice<a class="headerlink" href="#objects-for-insight-practice" title="Link to this heading">#</a></h1>
+<p>As mentioned already, there are lots of insight traditions and they each have their preferred meditation objects. Whereas from the point of view of pure insight, the object of meditation doesn’t matter, as with physical postures there are some practical considerations related to our specific abilities and our current phase of practice that are worth considering. Please note that no objects are specifically objects for insight practice versus concentration practice. Any object can be used for either emphasis, at least in general terms. The difference is whether we investigate the three characteristics of experience when using those objects, or ignore the fact that the object we focus on delivers individual sensations and thus artificially solidify it while tuning in to beneficial qualities of experience. Thus, you could use any of the objects mentioned below (as well as many others) for either type of practice.</p>
+<p>The first question is whether we have a specific agenda for what kind of sensations or focus we wish to include in the practice, that is, whether we want to do “choiceless awareness” practice or a more structured practice. Choiceless awareness practice is a bit of a misnomer, in that we are making a choice in relative terms to be more liberal with what attention does and where it goes. From an ultimate point of view, everything is causal and natural, meaning there is no individual “chooser”, but that is making things too complex at this stage of the game, so, for the moment, as the term “choiceless awareness” is in common usage for less structured and less directed investigation, I will use it.</p>
+<p>Choiceless awareness practice, in which we investigate whatever arises without a specific or narrow focus, has the advantage of being very inclusive and “natural”, and yet by the same token some people can easily get distracted, spaced out, and ungrounded when they don’t take a more structured approach. I put “natural” here in quotes as even all the sensations that make up experiences like the sense of having a choice, the sense of exerting effort, and the sense of applying a technique are just as natural, since they are simply causal occurrences just like everything else, but still, in relative terms, choiceless awareness does feel more “natural”.</p>
+<p>For those taking a more structured approach, some of the axes we can move along are the degree to which we include physical or mental sensations in meditation, whether we focus narrowly or use a more open field of attention, and whether we move the attention around or keep it in roughly the same place, and what we do with that attention when objects arise and vanish.</p>
+<p>The main advantage of trying to focus primarily on physical sensations, such as the breathing process, the sensations of walking, the points of contact with the floor, or the sensations of our physical body in general, is that these are much less susceptible to story-making than observing mental sensations. As my friend Vince wanted me to point out, the location of the physical sensations we choose can have important energetic implications. Noticing the top of the head or the breath at the nostrils may be more energy-producing than noticing the sensations of our feet or of breathing in the abdomen. Similarly, noticing the breath in our abdomen and the sensations of our feet may be more grounding and centering than noticing our breath at the nose area or paying attention to the top of the head.</p>
+<p>Knowing this may allow you to balance your level of energy by simply shifting the focus of your attention to physical sensations. Further, if we are habitually lost in our heads, increasing the strength of the wiring to the sensations of our chests and abdomens may help integrate those aspects of our body into our practice. Lots of emotions can have strong components in those locations that more cranially fixated practitioners can benefit from getting to know more clearly. However, if emotions are overwhelming you, the nose is clearly safer territory. Having both options and realizing their pros and cons can be helpful when making good choices about how to direct attention.</p>
+<p>Mental sensations tend to trap us in content and stories, as anyone who has ever tried to meditate knows all too well. The more mental sensations we include in our practice, the more we will encounter our emotional and psychological stuff. This can be a mixed blessing. If our practice is very strong, we can enter mental and emotional territory and yet still see the true nature of all the sensations that make it up. Doing so can truly be transformative in good ways. If our practice is not very strong, we will be swept away, lost in the habitual patterns of thinking associated with our “stuff”.</p>
+<p>Thus, physical sensations help ground us, and mental sensations open us up to plunging into the depths of mental life or, more often, getting caught up in it, further identified with it, or otherwise lost in it until our practice is strong. From a pure insight perspective, neither one is more holy or more of a source of truth than the other, but when we do the experiment we will quickly realize what works for us. “Works” in this case means that we can keep up being able to see the true nature of the numerous quick sensations that make up our reality.</p>
+<p>There are many other types of physical objects that may be investigated, including sounds, sights, and even smells and tastes. Some people have a natural proclivity for investigating the sensations of a specific sense door. There is a monk in Burma who recommends that his students use the high-pitched tones in our ear as an object, and sometimes I have found them very useful and interesting. Rather than seeming to be a continuous tone, we can hear each little individual sensation of ringing as a discontinuous entity.</p>
+<p>We may also take sights as object, such as the colors on the back of our eyelids or, if our eyes are open, whatever visual sensations present themselves. These are also impermanent, and if we are good at this we may even see our visual world presenting itself like the frames of a movie or a complex, flickering, organic patchwork of shifting impressions.</p>
+<p>Another consideration is whether to use a narrow or broad focus of attention. The advantage of a narrower focus of attention for beginners is that it can exclude many distractions. We may get very good at seeing certain types of objects, such as the sensations of breathing in the abdomen or beneath the nostrils, and this is just fine and even a very good idea. Such one-pointed practice is routinely recommended, and some people, such as myself, have a natural inclination toward this style.</p>
+<p>Others find that this makes them too uptight, agitated, or irritable; they find that they do much better with a broader and more inclusive field of attention. These things vary with person, situation, and phase of practice. If we are honest with ourselves, we will be able to recognize what works for us and what does not. The advantage of a broad field of attention is that less effort is required for staying focused and we can thus be more present to whatever arises naturally. The downside is that we may become very lazy meditators and space out or get lost in thought. These trade-offs must be weighed against each other depending on context, and as time goes on we adjust the breadth of our practice repeatedly depending on what is happening. There is much more specific information related to the breadth of attention presented later, as it is a fascinating topic.</p>
+<p>There are practices, such as body sweeping from the tradition of U Ba Khin and popularized by S. N. Goenka, that keep the attention moving all the time. This can be very helpful, as it keeps us engaged with new and interesting sensations and may keep us from getting into ruts of thinking that we are attending to new physical sensations when really we are just remembering old patterns of them. However, these practices have the downside of sometimes lacking the real precision of honest attention that comes from staying with more restricted areas of focus. We can end up giving more attention to keeping our attention moving than to clearly investigating what our attention reveals. Again, some people do well with moving-attention practices and some seem to thrive on keeping the attention in one general area.</p>
+<p>We may not always know exactly what is best for us. We may pick practices that feel good to us precisely because they don’t strike too close to home, don’t allow us to clearly investigate the unsettling truths of impermanence, suffering, and no-self, and don’t strike at our sense of solid identity in a way that really cuts to the bone. We might also pick traditions that are grueling and painful for us because we imagine that this is how it must be, even if such traditions do not necessarily facilitate clear investigations of the truth of our actual experience, the settling and opening that would help. Thus, I recommend working with good teachers who can advise us about which meditation object might be best suited to our disposition, which might help keep us from resting in our delusions. That said, some teachers only teach one practice, usually the one that worked for them or in which they trained. If that is also a technique that genuinely works for us, then we are set. If not, we may wish to investigate other traditions and techniques.</p>
+<p>On a related note, I have advocated figuring out what works for you, considering how you are built and where you are. I do, however, recommend moderation in this. For instance, you might sit down to meditate and then decide that you are just a bit sleepy, so you stand up, and then you settle down a bit, and a few minutes later you sit down again. Then a minute later you decide you really don’t like that little pain in your knee and so you lie down, and so it goes. Such practice, if you can call it that, is unlikely to be of benefit, so try to pick a posture and stick to it within reason. Patience with pain and discomfort is the doorway to achieving higher levels of equanimity later, albeit in some medically safe way. The ability to stay with our chosen practices also applies to meditation objects, particularly when you are starting out. There is a lot to be said for cultivating this basic level of self-control and discipline. Without it, we can end up shifting our practice habits every time our investigation begins to hit too close to home.</p>
+<section id="when-where-and-for-how-long">
+<h2>When, Where, and For How Long?<a class="headerlink" href="#when-where-and-for-how-long" title="Link to this heading">#</a></h2>
+<p>The best time to meditate is any time you can. The best place to meditate is wherever you can, and the best duration is for as long as possible or necessary for you to get what you wish out of it. This may seem obvious, but people can sometimes get it into their heads that certain times are better than others and thus not meditate when that seemingly sacrosanct period is unavailable or interrupted. They may feel that special places or special circumstances (special cushions, special noise levels, special surroundings, special props, special garments, etc.) are oh-so-necessary, and if these are not available then they may feel frustrated and unable to practice. They may feel that a certain minimal amount of meditation time is necessary, and thus find themselves unable to make use of whatever time they do happen to have. A more immediate answer is that you should meditate now, where you are, and make your life your meditation in all its aspects.</p>
+<p>I remember going to a spiritual book store in New Delhi, India, and asking the proprietor about some books on meditation I was trying to find. We got into a conversation, and I asked him if he meditated. He was dusting off a book at the time, and he said with a twinkle in his eye, “This is my meditation!” To some, this may sound trite, like some sort of idealized New Age dream, but it is where this all leads, so you might as well start getting used to it.</p>
+<p>If you have two hours each day for meditation, great. If you have two jobs, six kids, and just can’t find more than five minutes each day for meditation, make good use of what you’ve got. There have been times in my life when I was very grateful that I had twenty hours a day to practice. On the other hand, when I have only had ten minutes a day for formal practice, I have been grateful for the sense of how precious those ten minutes were. Skillful urgency and well-developed gratitude for a chance to practice at all can allow us to really use limited stretches of time to their fullest.</p>
+<p>If you can take off a month each year for intensive retreats, wonderful. If a weekend retreat once a year is all you can do, go for it. In short, honor where you are and what you can realistically accomplish given your current circumstances. If these are not entirely to your liking, and you want to take more time for practice, work on rearranging things in a way that leaves you with a life that you still find fulfilling should you later decide to practice a bit less.</p>
+<p>Luckily, meditation is an extremely portable endeavor. You don’t have to lug around special equipment, have other people around, or schedule an appointment. There are no fees, waiting lists, or red tape. Reality happens. Sensations arise. If you’re paying careful attention to them, really feeling exactly what it is like to be here now, you’re doing it! It’s just that simple. Nearly all activities benefit from increased attention, so this paradigm of increasing daily-life presence transmutes your seemingly non-meditative activities into meditation.</p>
+<p>While I have come to appreciate “ideal” meditation conditions and their obvious benefits, I have also had profound insights and extraordinary experiences in places that would hardly be considered ideal (such as in the break room at work, or while brushing my teeth). While I appreciate the additional depth of long periods of uninterrupted practice, I am certain that being able to make use of little bits of time here and there has done much to move things along.</p>
+<p>I have sometimes meditated when reclining before sleep, when reclining in the morning before I get up, when I wake up in the middle of the night, before catnaps on the couch, during lectures and meetings (noting boredom), and in the lounge of the school I attended before afternoon classes. Walking down the hall between patients is a great time to meditate, center, reconnect with loving-kindness, and steady attention. I have concluded that five minutes of really engaged, clear, and focused practice in poor circumstances can often produce more benefits for me than an hour of poor, vague, and distracted practice in “optimal conditions”.</p>
+<p>I have also come to appreciate the value of timed sits, where I resolve to sit and pay attention for a set period. I used to rely on a little alarm clock but now use my smartphone’s timer. I determine to sit for a set amount of time, usually between thirty to ninety minutes. I have found that, during untimed sits, I tend to get up when I run into difficult territory, mild pain from sitting, or other things that I don’t want to acknowledge and investigate clearly. A timed sit makes it much more likely that I will be able to sit in the face of trying circumstances, thus developing more patience, confidence, and discipline, as well as the insights that come from persistent investigation. Still, most of the old masters who pioneered and preserved these practices had no clocks, and they learned how to be disciplined without them, so, if you don’t have a clock, you can obviously still practice well.</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ch-09.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">9. The Four Noble Truths</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ch-11.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">11. On Teachers</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-where-and-for-how-long">When, Where, and For How Long?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Arahant Daniel M. Ingram
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Digital.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
